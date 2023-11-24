@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="思维题, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="思维题, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>思维题 | ShunchongLuo</title>
+    <title>思维题 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -455,7 +455,7 @@
 <p>每次构建一个堆求第几G大的元素，都需要重新遍历完所有10G的数据，相当于要遍历5 * 10G次，这需要频繁的IO操作，需要不断的从硬盘中读取数据</p>
 <h3 id="思路三：分而治之：基于二进制位映射分割"><a href="#思路三：分而治之：基于二进制位映射分割" class="headerlink" title="思路三：分而治之：基于二进制位映射分割"></a>思路三：分而治之：基于二进制位映射分割</h3><p>基于二进制位将10G数据映射到不同的文件中，利用快速排序的分割思想寻找中位数。</p>
 <p>依次读入一部分数据到内存，根据数据的最高位将数据映射到不同的文件中，然后判断中位数可能存在于于哪个文件然后再继续对哪个文件进行分割，知道能够将数据读入内存直接排序</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191504.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191504.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -469,7 +469,7 @@
 <p>B[0,….n-1]:输出结果</p>
 <p>C[0,….k-1]:辅助数组（A[i] &lt;= k-1）</p>
 <p><strong>计数排序的伪代码</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191514.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191514.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -492,7 +492,7 @@
 <p>最高位优先(Most Significant Digit first)法，简称MSD法：先按k1排序分组，同一组中记录，关键码k1相等，再对各组按k2排序分成子组，之后，对后面的关键码继续这样的排序分组，直到按最次位关键码kd对各子组排序后。再将各组连接起来，便得到一个有序序列。</p>
 <p>最低位优先(Least Significant Digit first)法，简称LSD法：先从kd开始排序，再对kd-1进行排序，依次重复，直到对k1排序后便得到一个有序序列。</p>
 <p><strong>基于计数的基数排序</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191520.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191520.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -512,8 +512,8 @@
 <p>2、根据次低位将第一轮的排序结果重新映射，知道轮回到最高位</p>
 <p>3、依次统计每个桶累加次数，若最高位为6的累加次数为4G,最高位为7的累加次数为6G,那么中位数一定在最高位为7的桶中，在为7的桶中寻找底1G大的数据即为中位数</p>
 <h3 id="思路五：桶排序"><a href="#思路五：桶排序" class="headerlink" title="思路五：桶排序"></a>思路五：桶排序</h3><h4 id="什么是桶排序"><a href="#什么是桶排序" class="headerlink" title="什么是桶排序"></a>什么是桶排序</h4><p><strong>思路：将待排序树组按照某种规则分别分到有限的桶里面，然后在针对每个桶里面的数据进行排序（可以继续递归采用桶排序也可以采用其他比较排序算法），然后将桶里面的数据依次放回到原数组</strong></p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191526.webp" alt="img"></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191530.jpg" alt="img" style="zoom:50%;">
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191526.webp" alt="img"></p>
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191530.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -543,7 +543,7 @@
 <p>（2）由于我们的内存只有2G，所以一次读取2G数据，按照某种映射关系映射到对应的桶里面</p>
 <p>（3）依次统计每个桶里面的数据，找到中位数的范围，在针对范围中的数据进行排序，找到中位数的具体位置</p>
 <h3 id="思路六：bitmap位图算法"><a href="#思路六：bitmap位图算法" class="headerlink" title="思路六：bitmap位图算法"></a>思路六：bitmap位图算法</h3><p>bitmap就是适用一个bit位代表一个数，所有bit位为1的下标就是排好序的数组（当然也可以用2个bit为代表一个数，或者多个）</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191535.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191535.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -557,7 +557,7 @@
 <p>3）找出不重复的数：使用2-bitmap，00表示为出现，01表示出现1次，10表示出现多次，当遍历完所有数据之后，筛选出bit位为00的下标；或者使用两个1-bitmap，如果重复就放入另外一个bitmap，那么另外一个bitmap为1的位都是重复的数</p>
 <h4 id="本题思路：使用位图法"><a href="#本题思路：使用位图法" class="headerlink" title="本题思路：使用位图法"></a>本题思路：使用位图法</h4><p>假设10G数据都为无符号整数（范围为0-2^32），考虑到可能原数据中可能有重复，所以我们采用两个bit位来表示一个整数，00表示为出现，01表示出现1次，10表示出现多次</p>
 <p>所需要的内存为</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191540.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191540.jpg" alt="img"></p>
 <p>对于10G的数据我们只需要1G的内存就能够表示出来所有的数据，可见bitmap的压缩性之强</p>
 <p>我们依次读取10G数据，然后转换为位图表示，去掉所有bit位为00的位置，找到中间下标就是中位数</p>
 
@@ -1095,7 +1095,7 @@
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

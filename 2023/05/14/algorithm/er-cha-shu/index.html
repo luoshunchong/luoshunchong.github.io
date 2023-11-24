@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="二叉树, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="二叉树, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>二叉树 | ShunchongLuo</title>
+    <title>二叉树 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -431,12 +431,12 @@
 <p><strong>这两位大佬的算法文章思路清晰，过程通俗易懂。非常值得学习！！！</strong></p>
 <p><strong>同时，也非常感谢两位大佬所创作的算法文章，在秋招期间让我受益良多。</strong></p>
 <h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1><p>满二叉树</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514152938.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514152938.png" alt="img"></p>
 <p>完全二叉树</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514152945.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514152945.png" alt="img" style="zoom:50%;">
 
 <p>二叉搜索树</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514152951.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514152951.png" alt="img" style="zoom:50%;">
 
 <p>总结一下，二叉树解题的思维模式分两类：<strong>（遍历和分解）</strong></p>
 <p><strong>1、是否可以通过遍历一遍二叉树得到答案</strong>？如果可以，用一个 <code>traverse</code> 函数配合外部变量来实现，这叫<strong>「遍历」的思维模式</strong>。(回溯法)</p>
@@ -521,7 +521,7 @@
 
 <p>单链表和数组的遍历可以是迭代的，也可以是递归的，<strong>二叉树这种结构无非就是二叉链表</strong>，由于没办法简单改写成迭代形式，所以一般说二叉树的遍历框架都是指递归的形式。</p>
 <p><strong>所谓前序位置，就是刚进入一个节点（元素）的时候，后序位置就是即将离开一个节点（元素）的时候</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153005.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153005.jpeg" alt="img" style="zoom:50%;">
 
 <p>比如倒序打印链表，除了使用栈来解决，还可以使用后序递归来解决。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/* 递归遍历单链表，倒序打印链表元素 */</span>
@@ -540,7 +540,7 @@
 <p>前序位置的代码在<strong>刚刚进入</strong>一个二叉树节点的时候执行；</p>
 <p>后序位置的代码在<strong>将要离开</strong>一个二叉树节点的时候执行；</p>
 <p>中序位置的代码在<strong>一个二叉树节点左子树都遍历完</strong>，即将开始遍历右子树的时候执行。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153012.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153012.jpeg" alt="img" style="zoom:50%;">
 
 <p><strong>二叉树的所有问题，就是让你在前中后序位置注入巧妙的代码逻辑，去达到自己的目的，你只需要单独思考每一个节点应该做什么，其他的不用你管，抛给二叉树遍历框架，递归会在所有节点上做相同的操作</strong>。</p>
 <p>单独思考每个节点做什么其实是难点。因为这需要注意输入输出是怎么样的，等等。。。</p>
@@ -570,7 +570,7 @@
 <h2 id="树的构造"><a href="#树的构造" class="headerlink" title="树的构造"></a>树的构造</h2><ul>
 <li>二叉树的构造：</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153025.png" alt="img" style="zoom:33%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153025.png" alt="img" style="zoom:33%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 根据数组构造二叉树</span>
 TreeNode<span class="token operator">*</span> <span class="token function">construct_binary_tree</span><span class="token punctuation">(</span><span class="token keyword">const</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> vec<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -883,9 +883,9 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
  <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153053.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153053.gif" alt="img" style="zoom:50%;">
 
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153057.png" alt="image-20211115102556583"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153057.png" alt="image-20211115102556583"></p>
 </li>
 </ul>
 </li>
@@ -1090,7 +1090,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>迭代</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153109.gif" alt="101.对称二叉树" style="zoom: 80%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153109.gif" alt="101.对称二叉树" style="zoom: 80%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -1296,7 +1296,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 <p>时间复杂度：$O(logN<em>logN)$。*<em>为什么是这个时间复杂度？怎么算出来的？</em></em></p>
 <p><strong>一棵完全二叉树的两棵子树，至少有一棵是满二叉树</strong>：其子树一定有一棵是满的，所以一定会触发 <code>le == ri</code>，只消耗 $O(logN)$ 的复杂度而不会继续递归。综上，算法的递归深度就是树的高度 $O(logN)$，每次递归所花费的时间就是 while 循环，需要 $O(logN)$，所以总体的时间复杂度是 $O(logN*logN)$。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153136.jpg" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153136.jpg" style="zoom:50%;">
 
 <h4 id="110-平衡二叉树"><a href="#110-平衡二叉树" class="headerlink" title="110. 平衡二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/balanced-binary-tree/">110. 平衡二叉树</a></h4><ul>
 <li>递归：后序，注意后序求高度和前序求深度，递归过程判断高度差</li>
@@ -1383,7 +1383,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <h5 id="124-二叉树中的最大路径和"><a href="#124-二叉树中的最大路径和" class="headerlink" title="124. 二叉树中的最大路径和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/">124. 二叉树中的最大路径和</a></h5><p>扩展题</p>
 <p><strong>路径</strong> 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 <strong>至多出现一次</strong> 。该路径 <strong>至少包含一个</strong> 节点，且不一定经过根节点。<strong>路径和</strong> 是路径中各节点值的总和。</p>
 <p>给你一个二叉树的根节点 <code>root</code> ，返回其 <strong>最大路径和</strong> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153143.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153143.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [-10,9,20,null,null,15,7]
 输出：42
@@ -1657,7 +1657,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 
 <h4 id="437-路径总和-III"><a href="#437-路径总和-III" class="headerlink" title="437. 路径总和 III"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/path-sum-iii/">437. 路径总和 III</a></h4><p>给定一个二叉树的根节点 <code>root</code> ，和一个整数 <code>targetSum</code> ，求该二叉树里节点值之和等于 <code>targetSum</code> 的 <strong>路径</strong> 的数目。<strong>路径</strong> 不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153157.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153157.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
 输出：3
@@ -1789,7 +1789,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <li>递归地在最大值 <strong>右边</strong> 的 <strong>子数组后缀上</strong> 构建右子树。</li>
 </ol>
 <p>返回 <code>nums</code> 构建的<strong>最大二叉树</strong>。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153207.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153207.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：nums = [3,2,1,6,0,5]
 输出：[6,3,5,null,2,0,null,null,1]
@@ -1907,7 +1907,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 
 <p>给定两个整数数组 <code>inorder</code> 和 <code>postorder</code> ，其中 <code>inorder</code> 是二叉树的中序遍历，<code>postorder</code> 是同一棵树的后序遍历，请你构造并返回这颗 <em>二叉树</em> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153214.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153214.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
 输出：[3,9,20,null,null,15,7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2121,7 +2121,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <li>迭代：使用队列，类似层序遍历</li>
 </ul>
 <p>给你两棵二叉树： <code>root1</code> 和 <code>root2</code> 。想象一下，当你将其中一棵覆盖到另一棵之上时，两棵树上的一些节点将会重叠（而另一些不会）。你需要将这两棵树合并成一棵新二叉树。合并的规则是：如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。返回合并后的二叉树。注意: 合并过程必须从两个树的根节点开始。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153225.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153225.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
 输出：[3,4,5,5,4,null,7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2142,7 +2142,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 <h4 id="二叉树找中序遍历的下一个节点"><a href="#二叉树找中序遍历的下一个节点" class="headerlink" title="二叉树找中序遍历的下一个节点"></a>二叉树找中序遍历的下一个节点</h4><p>剑指offer 面试题8：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/practice/9023a0c988684a53960365b889ceaf5e?tpId=265&amp;tqId=39212&amp;rp=1&amp;ru=/exam/oj/ta&amp;qru=/exam/oj/ta&amp;sourceUrl=/exam/oj/ta?tpId=13&amp;difficulty=undefined&amp;judgeStatus=undefined&amp;tags=&amp;title=">二叉树的下一个节点</a> </p>
 <p>如图，中序遍历{d,b,h,e,i,a,f,c,g}</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153230.png" style="zoom: 20%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153230.png" style="zoom: 20%;">
 
 <p>分为三种情况：</p>
 <ul>
@@ -2199,7 +2199,7 @@ struct TreeLinkNode {
 <p>对于一个节点 <code>x</code>，可以执行以下流程：</p>
 <p>1、先利用 <code>flatten(x-&gt;left)</code> 和 <code>flatten(x-&gt;right)</code> 将 <code>x</code> 的左右子树拉平。</p>
 <p>2、将 <code>x</code> 的右子树接到左子树下方，然后将整个左子树作为右子树。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153242.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153242.jpeg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2232,7 +2232,7 @@ struct TreeLinkNode {
 
 <h4 id="297-二叉树的序列化与反序列化"><a href="#297-二叉树的序列化与反序列化" class="headerlink" title="297. 二叉树的序列化与反序列化"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/">297. 二叉树的序列化与反序列化</a></h4><p>序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。</p>
 <p>请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153249.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153249.jpg" alt="img" style="zoom:50%;">
 
 <p>思路：主要考察二叉树的遍历和构造知识点</p>
 <p>前序遍历、中序遍历、后序遍历、层序遍历</p>
@@ -2240,7 +2240,7 @@ struct TreeLinkNode {
 <li>前序遍历：对于前序遍历序列化  <code>2,1,#,6,3,#,#</code>。</li>
 </ul>
 <p>值得注意的是，单从前序遍历的结果其实是无法重建二叉树的，但是这里我们得到的前序遍历结果还包括了  <strong>空指针信息</strong>  。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153254.png" alt="image-20220508214358769" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153254.png" alt="image-20220508214358769" style="zoom:50%;">
 
 <p>在反序列化的时候使用  <strong>队列</strong>  这种数据结构</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/**
@@ -2300,7 +2300,7 @@ struct TreeLinkNode {
 <ul>
 <li>后序遍历</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153305.png" alt="image-20220508214540166" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153305.png" alt="image-20220508214540166" style="zoom:50%;">
 
 <p>在反序列化的时候使用  <strong>栈</strong>  这种数据结构</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/**
@@ -2357,7 +2357,7 @@ struct TreeLinkNode {
 <ul>
 <li>层序遍历</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153314.png" alt="image-20220508214825094" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153314.png" alt="image-20220508214825094" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">/**
  * Definition for a binary tree node.
@@ -2446,7 +2446,7 @@ struct TreeLinkNode {
 
 
 <h4 id="652-寻找重复的子树"><a href="#652-寻找重复的子树" class="headerlink" title="652. 寻找重复的子树"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/find-duplicate-subtrees/">652. 寻找重复的子树</a></h4><p>给定一棵二叉树 <code>root</code>，返回所有<strong>重复的子树</strong>。对于同一类的重复子树，你只需要返回其中任意<strong>一棵</strong>的根结点即可。如果两棵树具有<strong>相同的结构</strong>和<strong>相同的结点值</strong>，则它们是<strong>重复</strong>的。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153320.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153320.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [1,2,3,4,null,2,4,null,null,4]
 输出：[[2,4],[4]]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2500,7 +2500,7 @@ struct TreeLinkNode {
 <li>迭代：因为有方向，所以迭代法很简单</li>
 </ul>
 <p>给定二叉搜索树（BST）的根节点 <code>root</code> 和一个整数值 <code>val</code>。你需要在 BST 中找到节点值等于 <code>val</code> 的节点。 返回以该节点为根的子树。 如果节点不存在，则返回 <code>null</code> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153324.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153324.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [4,2,7,1,3], val = 2
 输出：[2,1,3]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2525,7 +2525,7 @@ struct TreeLinkNode {
 </ul>
 <p>本题需要注意的是二叉搜索树的<strong>当前节点大于左子树的所有节点，小于右子树的所有节点</strong>。</p>
 <p>给你一个二叉树的根节点 <code>root</code> ，判断其是否是一个有效的二叉搜索树。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153328.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153328.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [5,1,4,null,null,3,6]
 输出：false
@@ -2571,7 +2571,7 @@ struct TreeLinkNode {
 <li>迭代：模拟中序，逻辑相同</li>
 </ul>
 <p>给你一个二叉搜索树的根节点 <code>root</code> ，返回 <strong>树中任意两不同节点值之间的最小差值</strong> 。差值是一个正数，其数值等于两值之差的绝对值。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153355.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153355.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [4,2,6,1,3]
 输出：1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2598,7 +2598,7 @@ struct TreeLinkNode {
 
 <h4 id="501-二叉搜索树中的众数"><a href="#501-二叉搜索树中的众数" class="headerlink" title="501. 二叉搜索树中的众数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/">501. 二叉搜索树中的众数</a></h4><p>递归：中序，清空结果集的技巧，遍历一遍便可求众数集合</p>
 <p>给你一个含重复值的二叉搜索树（BST）的根节点 <code>root</code> ，找出并返回 BST 中的所有 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BC%97%E6%95%B0/44796">众数</a>（即，出现频率最高的元素）。如果树中有不止一个众数，可以按 <strong>任意顺序</strong> 返回。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153409.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153409.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [1,null,2,2]
 输出：[2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2657,7 +2657,7 @@ struct TreeLinkNode {
 <li>迭代：模拟中序，逻辑相同</li>
 </ul>
 <p>给出二叉 <strong>搜索</strong> 树的根节点，该树的节点值各不相同，请你将其转换为累加树（Greater Sum Tree），使每个节点 <code>node</code> 的新值等于原树中大于或等于 <code>node.val</code> 的值之和。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153415.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153415.png" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
 输出：[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2759,14 +2759,14 @@ struct TreeLinkNode {
 <li>迭代：按序遍历，需要记录插入父节点，这样才能做插入操作</li>
 </ul>
 <p>给定二叉搜索树（BST）的根节点 <code>root</code> 和要插入树中的值 <code>value</code> ，将值插入二叉搜索树。 返回插入后二叉搜索树的根节点。 输入数据 <strong>保证</strong> ，新值和原始二叉搜索树中的任意节点值都不同。<strong>注意</strong>，可能存在多种有效的插入方式，只要树在插入后仍保持为二叉搜索树即可。 你可以返回 <strong>任意有效的结果</strong> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153422.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153422.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [4,2,7,1,3], val = 5
 输出：[4,2,7,1,3,5]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>其实<strong>可以不考虑题目中提示所说的改变树的结构的插入方式。</strong></p>
 <p>如下演示视频中可以看出：只要按照二叉搜索树的规则去遍历，遇到空节点就插入节点就可以了。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153426.gif" alt="701.二叉搜索树中的插入操作"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153426.gif" alt="701.二叉搜索树中的插入操作"></p>
 <p>例如插入元素10 ，需要找到末尾节点插入便可，一样的道理来插入元素15，插入元素0，插入元素6，<strong>需要调整二叉树的结构么？ 并不需要。</strong>。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -2806,7 +2806,7 @@ struct TreeLinkNode {
 <li>首先找到需要删除的节点；</li>
 <li>如果找到了，删除它。</li>
 </ol>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153434.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153434.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [5,3,6,2,4,null,7], key = 3
 输出：[5,4,6,2,null,null,7]
@@ -2821,20 +2821,20 @@ struct TreeLinkNode {
 <li><p>找到删除的节点</p>
 <ul>
 <li><p>第二种情况：左右孩子都为空（叶子节点），直接删除节点， 返回NULL为根节点</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153440.png" alt="img" style="zoom: 25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153440.png" alt="img" style="zoom: 25%;">
 </li>
 <li><p>第三种情况：删除节点的左孩子为空，右孩子不为空，删除节点，右孩子补位，返回右孩子为根节点</p>
 </li>
 <li><p>第四种情况：删除节点的右孩子为空，左孩子不为空，删除节点，左孩子补位，返回左孩子为根节点</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153445.png" alt="img" style="zoom: 33%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153445.png" alt="img" style="zoom: 33%;">
 </li>
 <li><p>第五种情况：左右孩子节点都不为空，则将删除节点的左子树头结点（左孩子）放到删除节点的右子树的最左面节点的左孩子上，返回删除节点右孩子为新的根节点。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153448.png" alt="img" style="zoom:50%;"></li>
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153448.png" alt="img" style="zoom:50%;"></li>
 </ul>
 </li>
 </ul>
 <p>第五种情况有点难以理解，看下面动画：</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153454.gif" alt="450.删除二叉搜索树中的节点"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153454.gif" alt="450.删除二叉搜索树中的节点"></p>
 <p>动画中棵二叉搜索树中，删除元素7， 那么删除节点（元素7）的左孩子就是5，删除节点（元素7）的右子树的最左面节点是元素8。</p>
 <p>将删除节点（元素7）的左孩子放到删除节点（元素7）的右子树的最左面节点（元素8）的左孩子上，就是把5为根节点的子树移到了8的左孩子的位置。</p>
 <p>要删除的节点（元素7）的右孩子（元素9）为新的根节点。.</p>
@@ -2891,7 +2891,7 @@ struct TreeLinkNode {
 <li>迭代：有序遍历，较复杂</li>
 </ul>
 <p>给你二叉搜索树的根节点 <code>root</code> ，同时给定最小边界<code>low</code> 和最大边界 <code>high</code>。通过修剪二叉搜索树，使得所有节点的值在<code>[low, high]</code>中。修剪树 <strong>不应该</strong> 改变保留在树中的元素的相对结构 (即，如果没有被移除，原有的父代子代关系都应当保留)。 可以证明，存在 <strong>唯一的答案</strong> 。所以结果应当返回修剪好的二叉搜索树的新的根节点。注意，根节点可能会根据给定的边界发生改变。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153503.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153503.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [1,0,2], low = 1, high = 2
 输出：[1,null,2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2955,7 +2955,7 @@ struct TreeLinkNode {
 <li>迭代：较复杂，通过三个队列来模拟</li>
 </ul>
 <p>给你一个整数数组 <code>nums</code> ，其中元素已经按 <strong>升序</strong> 排列，请你将其转换为一棵 <strong>高度平衡</strong> 二叉搜索树。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153509.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153509.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：nums = [-10,-3,0,5,9]
 输出：[0,-3,9,-10,null,5]
@@ -3066,13 +3066,13 @@ TreeNode<span class="token operator">*</span> <span class="token function">find<
 <li>迭代：不适合模拟回溯</li>
 </ul>
 <p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/8918834?fr=aladdin">百度百科</a>中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（<strong>一个节点也可以是它自己的祖先</strong>）。”</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153516.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153516.png" alt="img"></p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 输出：3
 解释：节点 5 和节点 1 的最近公共祖先是节点 3 。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>思路：后序遍历</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153519.png" alt="236.二叉树的最近公共祖先2" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153519.png" alt="236.二叉树的最近公共祖先2" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -3092,12 +3092,12 @@ TreeNode<span class="token operator">*</span> <span class="token function">find<
 <ul>
 <li>情况一：如果<code>p</code>是节点<code>6</code>，<code>q</code>是节点<code>7</code>，那么它俩的<code>LCA</code>就是节点<code>5</code>：</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153523.png" alt="image-20220510101031928" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153523.png" alt="image-20220510101031928" style="zoom:50%;">
 
 <ul>
 <li>情况二：当然，<code>p</code>和<code>q</code>本身也可能是<code>LCA</code>，比如这种情况<code>q</code>本身就是<code>LCA</code>节点：</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153527.png" alt="image-20220510101135783" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153527.png" alt="image-20220510101135783" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token function">find</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>val<span class="token punctuation">,</span> q<span class="token operator">-&gt;</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3205,7 +3205,7 @@ TreeNode<span class="token operator">*</span> <span class="token function">find<
 <li>迭代：按序遍历</li>
 </ul>
 <p>给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153534.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153534.png" alt="img"></p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
 输出: 6 
 解释: 节点 2 和节点 8 的最近公共祖先是 6。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -3228,7 +3228,7 @@ TreeNode<span class="token operator">*</span> <span class="token function">find<
 
 
 <h4 id="二叉树中任意两个节点之间的最短路径"><a href="#二叉树中任意两个节点之间的最短路径" class="headerlink" title="二叉树中任意两个节点之间的最短路径"></a>二叉树中任意两个节点之间的最短路径</h4><p>思路：两个节点之间的最短路径一定会经过两个节点的最小公共祖先，所以我们可以用LCA（最低公共祖先）的解法。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153538.png" alt="image-20220821154822718" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153538.png" alt="image-20220821154822718" style="zoom:50%;">
 
 <p>2和8的最短路径是2,8和6的最短路径是5。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
@@ -3306,7 +3306,9 @@ TreeNode<span class="token operator">*</span> <span class="token function">LCA</
 
 
 
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153543.jpg" alt="二叉树1" style="zoom:150%;">
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153543.jpg" alt="二叉树1" style="zoom:150%;">
+
+
 
 
 
@@ -3845,7 +3847,7 @@ TreeNode<span class="token operator">*</span> <span class="token function">LCA</
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

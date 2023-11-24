@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="字符串, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="字符串, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>字符串 | ShunchongLuo</title>
+    <title>字符串 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -600,11 +600,11 @@ string <span class="token function">subStrings</span><span class="token punctuat
 输出: "56088"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>整个计算过程大概是这样，<strong>有两个指针 <code>i，j</code> 在 <code>num1</code> 和 <code>num2</code> 上游走，计算乘积，同时将乘积叠加到 <code>res</code> 的正确位置</strong>，如下 GIF 图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192502.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192502.gif" alt="img" style="zoom:50%;">
 
 <p>现在还有一个关键问题，如何将乘积叠加到 <code>res</code> 的正确位置，或者说，如何通过 <code>i，j</code> 计算 <code>res</code> 的对应索引呢？</p>
 <p>其实，细心观察之后就发现，**<code>num1[i]</code> 和 <code>num2[j]</code> 的乘积对应的就是 <code>res[i+j]</code> 和 <code>res[i+j+1]</code> 这两个位置**。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192506.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192506.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">string <span class="token function">multiply</span><span class="token punctuation">(</span>string num1<span class="token punctuation">,</span> string num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> m <span class="token operator">=</span> num1<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> n <span class="token operator">=</span> num2<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1030,7 +1030,7 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 
 
 
-<h2 id="前缀树"><a href="#前缀树" class="headerlink" title="前缀树"></a>前缀树</h2><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192521.png" alt="image.png" style="zoom:50%;">
+<h2 id="前缀树"><a href="#前缀树" class="headerlink" title="前缀树"></a>前缀树</h2><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192521.png" alt="image.png" style="zoom:50%;">
 
 <p>前缀树数据结构：</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">struct</span> <span class="token class-name">TrieNode</span> <span class="token punctuation">{</span>
@@ -1246,8 +1246,8 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 <li><p><strong>当星号匹配一次时</strong>，即 $pattern[j-2]$（星号前一个字符）用来被匹配，则此时$dp[i][j]=dp[i][j-1]$;</p>
 </li>
 <li><p><strong>当星号匹配多个字符时</strong>，由于$pattern[j-2]$ （星号前一个字符）被用来匹配多次，故当前的匹配情况取决于<code>str</code>当前字符（$i-1$位置）与$pattern[j-2]$是否相等（或$pattern[j-2]$为一个点）、以及$dp$数组在前一位置的匹配情况，即<code>dp[i][j]=dp[i-1][j] &amp;&amp; (str[i-1]==pattern[j-2] || pattern[j - 2]=='.')</code>;</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192531.png" alt="图片说明" style="zoom: 33%;">
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192535.png" alt="图片说明" style="zoom:33%;"></li>
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192531.png" alt="图片说明" style="zoom: 33%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192535.png" alt="图片说明" style="zoom:33%;"></li>
 </ul>
 </li>
 </ul>
@@ -1300,7 +1300,7 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 <li><p>$p[j]= ‘*’$，则表示可对 $p[j]$ 的前一个字符 $p[j-1]$ 匹配（或理解为复制）任意次（包括 0 次）。为便于阐述，以下图 <code>s= "abaaacd"</code>，<code>p="aba*cd"</code>，<code>s[i]='a'</code>，<code>p[j−1]='a'</code>和<code>p[j]='*'</code> 为例进行说明：</p>
 </li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192541.png" alt="LeetCode-10.png" style="zoom:14%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192541.png" alt="LeetCode-10.png" style="zoom:14%;">
 
 <p><strong>匹配 0 次</strong>，意味着 <code>p[j−1]</code> 和 <code>p[j]</code> 不起作用，相当于在 p 中删去了 <code>p[j−1]</code> 和 <code>p[j]</code>，此时有：</p>
 <p>$dp[i][j]= dp[i][j-2] $.</p>
@@ -1314,7 +1314,7 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 <p><strong>匹配 k 次</strong>，意味着 <code>p[j−1]</code> 和 <code>p[j]</code> 组成了 <code>k</code> 个<code>'a'</code>，若 $s[i−k+1, …, i]=p[j−1]$，则有：</p>
 <p>$dp[i][j]= dp[i-k][j-2], \quad &amp;\quad s[i-k+1,\ …,\ i]=p[j-1] $.</p>
 <p>上述过程对应的状态更新过程如下图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192545.png" alt="LeetCode-10-3.png" style="zoom: 25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192545.png" alt="LeetCode-10-3.png" style="zoom: 25%;">
 
 <hr>
 <p><strong>状态转移的优化：</strong> 总的来看，当 $p[j]= ‘*’$ 时，对于匹配 $0\sim k$ 次，我们有：</p>
@@ -1324,14 +1324,14 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 <p>观察发现，（2）式与（1）式中的后 k 项刚好相差了一个条件 $s[i]=p[j−1]$，将（2）式代入（1）式可得简化后的「状态转移方程」为：</p>
 <p>$（3）dp[i][j]= dp[i][j-2] \quad \text{or} \quad {\ dp[\textcolor{red}{i-1}][j] \quad &amp; \quad s[i]=p[j-1] \ } \ \quad \quad ✅\ ✅\ ✅ \quad \quad$</p>
 <p><code>p[j]= '*'</code>时，简化后对应的状态更新过程如下图所示：	 </p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192553.png" alt="LeetCode-10-4.png" style="zoom:25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192553.png" alt="LeetCode-10-4.png" style="zoom:25%;">
 
 <p>⚠️ 需要特别注意的是，若 <code>p[j−1]= '.'</code>，此时 <code>p[j−1]</code> 可表示任意字符，显然也就满足 $s[i]=p[j−1]$。</p>
 <p>总结以上各种情况来看，最终的状态转移方程如下：</p>
 <p>$（4） dp[i][j]= \begin{cases} \ dp[i-1][j-1], &amp; s[i]=p[j] \ \ dp[i][j-2], &amp; p[j]=<code>*</code> \quad &amp; \quad s[i]\neq p[j-1] \ \ \ dp[i][j-2] \quad \text{or} \quad dp[\textcolor{black}{i-1}][j], &amp; p[j]=<code>*</code> \quad &amp; \quad s[i]=p[j-1] \ \end{cases} \quad \quad$</p>
 <p>由于空间限制，上述判断中未展示 <code>p[j]=‘.‘</code> 的情况。事实上，当 <code>p[j]=‘.‘</code> 时我们认为 $s[i]=p[j]$。</p>
 <p>从坐标的角度来看，对应的状态更新过程如下图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192621.png" alt="LeetCode-10-5.png" style="zoom:25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192621.png" alt="LeetCode-10-5.png" style="zoom:25%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -1447,22 +1447,22 @@ s5<span class="token punctuation">.</span><span class="token function">insert</s
 <p><strong>根据 <code>dp</code> 函数的定义</strong>，这几种情况都很好解释：</p>
 <p>1.1 通配符匹配 0 次或多次</p>
 <p>将 <code>j</code> 加 2，<code>i</code> 不变，含义就是直接跳过 <code>p[j]</code> 和之后的通配符，即通配符匹配 0 次：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192633.png" alt="image-20220727131342796" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192633.png" alt="image-20220727131342796" style="zoom:50%;">
 
 <p>将 <code>i</code> 加 1，<code>j</code> 不变，含义就是 <code>p[j]</code> 匹配了 <code>s[i]</code>，但 <code>p[j]</code> 还可以继续匹配，即通配符匹配多次的情况：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192637.png" alt="image-20220727131414414" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192637.png" alt="image-20220727131414414" style="zoom:50%;">
 
 <p>两种情况只要有一种可以完成匹配即可，所以对上面两种情况求或运算。</p>
 <p>1.2 常规匹配 1 次</p>
 <p>由于这个条件分支是无 <code>*</code> 的常规匹配，那么如果 <code>s[i] == p[j]</code>，就是 <code>i</code> 和 <code>j</code> 分别加一：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192643.png" alt="image-20220727131446999" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192643.png" alt="image-20220727131446999" style="zoom:50%;">
 
 <p>2.1 通配符匹配 0 次</p>
 <p>类似情况 1.1，将 <code>j</code> 加 2，<code>i</code> 不变：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192652.png" alt="image-20220727131042941" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192652.png" alt="image-20220727131042941" style="zoom:50%;">
 
 <p>2.2 如果没有 <code>*</code> 通配符，也无法匹配，那只能说明匹配失败了：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192658.png" alt="image-20220727131007783" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192658.png" alt="image-20220727131007783" style="zoom:50%;">
 
 <p>看图理解应该很容易了，现在可以思考一下 <code>dp</code> 函数的 base case：</p>
 <p><strong>一个 base case 是 <code>j == p.size()</code> 时</strong>，按照 <code>dp</code> 函数的定义，这意味着模式串 <code>p</code> 已经被匹配完了，那么应该看看文本串 <code>s</code> 匹配到哪里了，如果 <code>s</code> 也恰好被匹配完，则说明匹配成功：</p>
@@ -1584,7 +1584,7 @@ p = "*a*b"
 <li><p>$p[j]= ‘*’$，则 <code>p[j]</code> 可以<strong>匹配零或任意多个小写字母</strong>。为便于阐述，以下图 <code>s= "abaaacd"</code>，<code>p="aba*cd"</code>，<code>s[i]='a'</code>，<code>p[j−1]='a'</code>和<code>p[j]='*'</code> 为例进行说明：</p>
 </li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192708.png" alt="LeetCode-44.png" style="zoom: 25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192708.png" alt="LeetCode-44.png" style="zoom: 25%;">
 
 <p><strong>匹配 0 个字符</strong>，意味着 <code>p[j]</code> 不起作用，相当于在 <code>p </code>中删去了<code>p[j]</code>，此时有：<br>$dp[i][j]= dp[i][j-1]$</p>
 <p><strong>匹配 1 个字符</strong>，意味着 <code>p[j]='*'</code> 与 <code>s[i]</code> 匹配，则$dp[i][j] $可由$ dp[i-1][j-1]$转移而来，此时有：<br>$dp[i][j]= dp[i-1][j-1]$</p>
@@ -1593,7 +1593,7 @@ p = "*a*b"
 <p>$\quad \quad ……$</p>
 <p><strong>匹配 k 个字符</strong>，意味着<code>p[j]='*'</code> 与 <code>s[i−k+1, .., i−1,i]</code> 匹配，则$ dp[i][j]$可由 $dp[i-k][j-1]$转移而来，此时有：<br>$dp[i][j]= dp[i-k][j-1]$</p>
 <p>上述过程对应的状态更新过程如下图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192713.png" alt="LeetCode-44-1.png" style="zoom:25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192713.png" alt="LeetCode-44-1.png" style="zoom:25%;">
 
 <hr>
 <p><strong>状态转移的优化：</strong> 总的来看，当 $p[j]= ‘*’$ 时，对于匹配 $1\sim k$次，我们有：</p>
@@ -1603,13 +1603,13 @@ p = "*a*b"
 <p>观察发现，（2）式与（1）式中的后 k 项刚好相等，将（2）式代入（1）式可得简化后的「状态转移方程」为：</p>
 <p>（3）$dp[i][j]= dp[i][j-1] \quad \text{or} \quad \ dp[\textcolor{red}{i-1}][j] \quad \quad \quad \quad \quad \quad ✅\ ✅\ ✅ \quad \quad \quad \quad \quad \quad \quad \quad$</p>
 <p>$p[j]= ‘*’$时，简化后对应的状态更新过程如下图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192717.png" alt="LeetCode-44-2.png" style="zoom:25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192717.png" alt="LeetCode-44-2.png" style="zoom:25%;">
 
 <hr>
 <p><strong>综合 1、2、3 来看</strong>，最终的状态转移方程如下：</p>
 <p>$dp[i][j]= \begin{cases} dp[i-1][j-1], &amp; s[i]=p[j] \quad \text{or} \quad p[j]= <code>?</code> \ dp[i][j-1] \quad \text{or} \quad dp[\textcolor{black}{i-1}][j], &amp; p[j]=<code>*</code> \ \end{cases}$</p>
 <p>对应的状态更新过程如下图所示：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192721.png" alt="LeetCode-44-3.png" style="zoom:25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192721.png" alt="LeetCode-44-3.png" style="zoom:25%;">
 </li>
 <li><p>初始化：$dp[0][0]=True$。对于其他 $dp[0][j]$，只有当 $p[j]$ 及之前字符全为<code>'*'</code>时才有 $dp[0][j]=True$，否则 $dp[0][j]=False$。</p>
 <p>以 <code>p= "*a*b" </code>为例，<code>dp[0][*] = [True, True, False, False, False]</code>。</p>
@@ -1764,14 +1764,14 @@ p = "*a*b"
 <p>先从暴力算法开始：</p>
 <p>对于暴力算法，如果出现不匹配字符，同时回退 <code>txt</code> 和 <code>pat</code> 的指针，嵌套 for 循环，时间复杂度 <code>O(MN)</code>，空间复杂度<code>O(1)</code>。最主要的问题是，如果字符串中重复的字符比较多，该算法就显得很蠢。</p>
 <p>比如 <code>txt = "aaacaaab", pat = "aaab"</code>：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192730.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192730.gif" alt="img" style="zoom:50%;">
 
 <p>很明显，<code>pat</code> 中根本没有字符 c，根本没必要回退指针 <code>i</code>，暴力解法明显多做了很多不必要的操作。</p>
 <p>KMP 算法的不同之处在于，它会花费空间来记录一些信息，在上述情况中就会显得很聪明：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192733.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192733.gif" alt="img" style="zoom:50%;">
 
 <p>再比如类似的 <code>txt = "aaaaaaab", pat = "aaab"</code>，暴力解法还会和上面那个例子一样蠢蠢地回退指针 <code>i</code>，而 KMP 算法又会耍聪明：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192737.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192737.gif" alt="img" style="zoom:50%;">
 
 <p>因为 KMP 算法知道字符 b 之前的字符 a 都是匹配的，所以每次只需要比较字符 b 是否被匹配就行了。</p>
 <p><strong>KMP 算法永不回退 <code>txt</code> 的指针 <code>i</code>，不走回头路（不会重复扫描 <code>txt</code>），而是借助 <code>dp</code> 数组中储存的信息把 <code>pat</code> 移到正确的位置继续匹配</strong>，时间复杂度只需 O(N)，用空间换时间，所以我认为它是一种动态规划算法。</p>
@@ -2312,7 +2312,7 @@ p = "*a*b"
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

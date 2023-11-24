@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="动态规划, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="动态规划, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>动态规划 | ShunchongLuo</title>
+    <title>动态规划 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -475,7 +475,7 @@
     <span class="token keyword">return</span> dp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144557.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144557.jpg" alt="img" style="zoom:50%;">
 
 <p>进一步思考这个问题，其实<strong>当前问题的解只依赖前两个的解</strong>，所以我们其实不用将所有的子问题都记录，只需要记录前两个问题就可以了，进一步降低了空间复杂度。</p>
 <p><strong>递归算法的时间复杂度怎么计算？就是用子问题个数乘以解决一个子问题需要的时间</strong>。</p>
@@ -548,11 +548,11 @@ dp<span class="token punctuation">[</span><span class="token number">2</span><sp
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>这题其实也可以定义<strong>最后一次爬楼梯不用花费体力。</strong></p>
-<h3 id="Leetcode-62-不同路径"><a href="#Leetcode-62-不同路径" class="headerlink" title="Leetcode 62. 不同路径"></a>Leetcode <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/unique-paths/">62. 不同路径</a></h3><p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144714.png" alt="img"></p>
+<h3 id="Leetcode-62-不同路径"><a href="#Leetcode-62-不同路径" class="headerlink" title="Leetcode 62. 不同路径"></a>Leetcode <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/unique-paths/">62. 不同路径</a></h3><p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144714.png" alt="img"></p>
 <p>第一眼看这题就想着<strong>回溯，深搜</strong>，把所有的情况遍历出来。</p>
 <p>或者直接使用<strong>深搜</strong></p>
 <p><strong>机器人走过的路径可以抽象为一棵二叉树，而叶子节点就是终点！</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144724.png" alt="62.不同路径" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144724.png" alt="62.不同路径" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -650,7 +650,7 @@ dp<span class="token punctuation">[</span><span class="token number">2</span><sp
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144802.png" alt="96.不同的二叉搜索树2" style="zoom: 33%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144802.png" alt="96.不同的二叉搜索树2" style="zoom: 33%;">
 
 <p>本题很抽象，有难度！！！注意解析：本题的关键就是枚举。二叉树算法的关键就在于明确根节点需要做什么，其实 <code>BST</code> 作为一种特殊的二叉树，核心思路也是一样的。</p>
 <p>举个例子，比如给算法输入<code>n = 5</code>，也就是说用<code>{1,2,3,4,5}</code>这些数字去构造 <code>BST</code>。</p>
@@ -755,7 +755,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 
 
 <h2 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h2><p>背包问题分类：</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144822.png" alt="416.分割等和子集1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144822.png" alt="416.分割等和子集1"></p>
 <h3 id="0-1背包"><a href="#0-1背包" class="headerlink" title="0-1背包"></a>0-1背包</h3><h4 id="二维数组来定义-dp"><a href="#二维数组来定义-dp" class="headerlink" title="二维数组来定义$dp$"></a><strong>二维数组来定义$dp$</strong></h4><p>较为复杂，用于理论理解比较好，不建议实际使用。因为二维数组定义$dp$空间复杂度多了一个数量级。</p>
 <p><strong>举例子：</strong></p>
 <p>背包最大重量为4。</p>
@@ -805,18 +805,18 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <li><strong>3.<code>dp</code>数组如何初始化</strong></li>
 </ul>
 <p>首先从$dp[i][j]$的定义出发，如果背包容量$j$为0的话，即$dp[i][0]$，无论是选取哪些物品，背包价值总和一定为0。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144835.png" alt="动态规划-背包问题3" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144835.png" alt="动态规划-背包问题3" style="zoom:50%;">
 
 <ul>
 <li><strong>4.确定遍历顺序</strong></li>
 </ul>
 <p>先遍历物品和先遍历背包都可以</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144848.png" alt="动态规划-背包问题6" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144848.png" alt="动态规划-背包问题6" style="zoom:50%;">
 
 <ul>
 <li><strong>5.举例推导dp数组</strong></li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144855.png" alt="动态规划-背包问题4" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144855.png" alt="动态规划-背包问题4" style="zoom:50%;">
 
 <p><strong>C++代码：</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">test_2_wei_bag_problem1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -918,7 +918,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <li><strong>5.举例推导$dp$数组</strong></li>
 </ul>
 <p>​	一维$dp$，分别用物品0，物品1，物品2 来遍历背包，最终得到结果如下：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144935.png" alt="动态规划-背包问题9" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144935.png" alt="动态规划-背包问题9" style="zoom:50%;">
 
 <p><strong>完整代码：</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">test_1_wei_bag_problem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1115,7 +1115,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <p><strong>$dp$数组初始化：</strong>物品价值不会是负数，初始为0，保证递推的时候$dp[i][j]$不会被初始值覆盖。</p>
 <p><strong>确定遍历顺序：</strong>同0-1背包遍历顺序一样，<strong>外层for循环遍历物品，内层for循环遍历背包容量且从后向前遍历！</strong></p>
 <p><strong>举例推导$dp$数组：</strong>以输入：[“10”,”0001”,”111001”,”1”,”0”]，m = 3，n = 3为例，最后$dp$数组的状态如下：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514144956.png" alt="474.一和零" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514144956.png" alt="474.一和零" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -1154,10 +1154,10 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <p><strong>为什么遍历物品在外层循环，遍历背包容量在内层循环？</strong></p>
 <p><strong>在完全背包中，对于一维<code>dp</code>数组来说，其实两个<code>for</code>循环嵌套顺序同样无所谓！</strong>因为$dp[j]$ 是根据 下标j之前所对应的$dp[j]$计算出来的。 只要保证下标j之前的$dp[j]$都是经过计算的就可以了。</p>
 <p>遍历物品在外层循环，遍历背包容量在内层循环，状态如图：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145011.jpg" alt="动态规划-完全背包1" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145011.jpg" alt="动态规划-完全背包1" style="zoom:50%;">
 
 <p>遍历背包容量在外层循环，遍历物品在内层循环，状态如图：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145017.png" alt="动态规划-完全背包2" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145017.png" alt="动态规划-完全背包2" style="zoom:50%;">
 
 <p><strong>完全背包中，两个for循环的先后顺序，都不影响计算$dp[j]$所需要的值（这个值就是下标j之前所对应的$dp[j]$）。</strong></p>
 <p>先遍历背包再遍历物品，代码如下：</p>
@@ -1654,7 +1654,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <td align="center">6</td>
 </tr>
 </tbody></table>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145112.gif" alt="alt"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145112.gif" alt="alt"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
@@ -1977,7 +1977,7 @@ for 0 &lt;= i &lt; n:
 
 <p>每一步的意义：<code>dp[3][2][1]</code> 的含义就是：今天是第三天，我现在手上持有着股票，至今最多进行 2 次交易。</p>
 <p>求的最终答案是 <code>dp[n - 1][K][0]</code>，即最后一天，最多允许 <code>K</code> 次交易，最多获得多少利润。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145155.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145155.png" alt="img" style="zoom:50%;">
 
 <p>状态转移方程：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
@@ -2110,7 +2110,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 <p>第二次买入依赖于第一次卖出的状态，其实相当于第0天第一次买入了，第一次卖出了，然后再买入一次（第二次买入），那么现在手头上没有现金，只要买入，现金就做相应的减少。</p>
 <p>所以第二次买入操作，初始化为：$dp[0][3] = -prices[0]$;</p>
 <p>同理第二次卖出初始化$dp[0][4] = 0$;</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145209.png" alt="123.买卖股票的最佳时机III" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145209.png" alt="123.买卖股票的最佳时机III" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2250,7 +2250,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 <p>今天卖出了股票（状态三），同样$dp[0][2]$初始化为0，因为最少收益就是0，绝不会是负数。</p>
 <p>同理$dp[0][3]$也初始为0。</p>
 <p>从前向后遍历</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145221.png" alt="309.最佳买卖股票时机含冷冻期" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145221.png" alt="309.最佳买卖股票时机含冷冻期" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2365,7 +2365,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145247.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145247.gif" alt="img"></p>
 <p>这题的变体：</p>
 <h4 id="剑指-Offer-48-最长不含重复字符的子字符串"><a href="#剑指-Offer-48-最长不含重复字符的子字符串" class="headerlink" title="剑指 Offer 48. 最长不含重复字符的子字符串"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/">剑指 Offer 48. 最长不含重复字符的子字符串</a></h4><p>请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入: "abcabcbb"
@@ -2416,7 +2416,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 <ul>
 <li><strong>返回值：</strong> $\max(dp)$ ，即全局的 “最长不重复子字符串” 的长度。</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145316.png" alt="Picture1.png" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145316.png" alt="Picture1.png" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2480,7 +2480,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 </li>
 <li><p>在$nums[i] &gt; nums[j]$前提下，如果在$[0, i-1]$的范围内，找到了$j$，使得$dp[j] + 1 == dp[i]$，说明找到了两个相同长度的递增子序列。</p>
 <p>那么以$i$为结尾的子串的最长递增子序列的个数 就应该加上以$j$为结尾的子串的最长递增子序列的个数，即：$count[i] += count[j]$;</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145326.jpg" alt="673.最长递增子序列的个数" style="zoom:50%;"></li>
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145326.jpg" alt="673.最长递增子序列的个数" style="zoom:50%;"></li>
 </ul>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2523,10 +2523,10 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 <p>前面说的<code>标准 LIS 算法</code>只能在一维数组中寻找最长子序列，而我们的信封是由 <code>(w, h)</code> 这样的二维数对形式表示的，如何把 <code>LIS 算法</code>运用过来呢？</p>
 <p><strong>先对宽度 <code>w</code> 进行升序排序，如果遇到 <code>w</code> 相同的情况，则按照高度 <code>h</code> 降序排序；之后把所有的 <code>h</code> 作为一个数组，在这个数组上计算 <code>LIS </code>的长度就是答案</strong>。</p>
 <p>画个图理解一下，先对这些数对进行排序：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145337.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145337.jpg" alt="img" style="zoom:50%;">
 
 <p>然后在 <code>h</code> 上寻找最长递增子序列，这个子序列就是最优的嵌套方案：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145344.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145344.jpg" alt="img" style="zoom:50%;">
 
 <p>为什么呢？稍微思考一下就明白了：</p>
 <p>首先，对宽度 <code>w</code> 从小到大排序，确保了 <code>w</code> 这个维度可以互相嵌套，所以我们只需要专注高度 <code>h</code> 这个维度能够互相嵌套即可。</p>
@@ -2587,7 +2587,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145354.jpg" alt="718.最长重复子数组" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145354.jpg" alt="718.最长重复子数组" style="zoom:50%;">
 
 <p>这个题也可以考虑使用<strong>滚动数组</strong>来做。</p>
 <h3 id="Leetcode-1143-最长公共子序列"><a href="#Leetcode-1143-最长公共子序列" class="headerlink" title="Leetcode 1143. 最长公共子序列"></a>Leetcode <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-subsequence/">1143. 最长公共子序列</a></h3><p>给定两个字符串 <code>text1</code> 和 <code>text2</code>，返回这两个字符串的最长公共子序列的长度。</p>
@@ -2614,7 +2614,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145402.jpg" alt="1143.最长公共子序列" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145402.jpg" alt="1143.最长公共子序列" style="zoom:50%;">
 
 <h4 id="如果要返回最大子串呢？"><a href="#如果要返回最大子串呢？" class="headerlink" title="如果要返回最大子串呢？"></a>如果要返回最大子串呢？</h4><p>可以从两个子串末尾向前遍历，如果相等，加入字串，不相等比较$dp$数组的数字，i或者j往大的那一边走。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -2800,16 +2800,16 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145419.png" alt="image-20220326092841461" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145419.png" alt="image-20220326092841461" style="zoom:50%;">
 
 <p>时间复杂度$O(N)$,空间复杂度$O(N)$。</p>
 <p>本题可以才有双指针来写。时间复杂度$O(N)$,空间复杂度$O(1)$。</p>
 <p><strong>进阶：</strong>如果给你一系列字符串 <code>s1,s2,...</code> 和字符串 <code>t</code>，你需要判定每个串 <code>s</code> 是否是 <code>t</code> 的子序列（可以假定 <code>s</code> 较短，<code>t</code> 很长）。</p>
 <p>就是可以采用二分法来做了。将模式串t哈希一下（<code>unordered_map</code>）。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145424.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145424.jpg" alt="img" style="zoom:50%;">
 
 <p>按照双指针的解法，我们需要 <code>j</code> 线性前进扫描字符 “c”，但借助 <code>index</code> 中记录的信息，<strong>可以二分搜索 <code>index[c]</code> 中比 j 大的那个索引</strong>，在上图的例子中，就是在 <code>[0,2,6]</code> 中搜索比 4 大的那个索引：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145429.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145429.jpg" alt="img" style="zoom:50%;">
 
 
 
@@ -2852,7 +2852,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145438.jpg" alt="115.不同的子序列" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145438.jpg" alt="115.不同的子序列" style="zoom:50%;">
 
 <h4 id="Leetcode-583-两个字符串的删除操作"><a href="#Leetcode-583-两个字符串的删除操作" class="headerlink" title="Leetcode  583. 两个字符串的删除操作"></a>Leetcode  <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/delete-operation-for-two-strings/">583. 两个字符串的删除操作</a></h4><p>给定两个单词 <code>word1</code> 和 <code>word2</code> ，返回使得 <code>word1</code> 和 <code>word2</code> <strong>相同</strong>所需的<strong>最小步数</strong>。</p>
 <p>输入: “sea”, “eat”。输出: 2   解释: 第一步将”sea”变为”ea”，第二步将”eat”变为”ea”</p>
@@ -2863,8 +2863,7 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
 <p>情况一：删$word1[i - 1]$，最少操作次数为$dp[i - 1][j] + 1$</p>
 <p>情况二：删$word2[j - 1]$，最少操作次数为$dp[i][j - 1] + 1$</p>
 <p>情况三：同时删$word1[i - 1]$和$word2[j - 1]$，操作的最少次数为$dp[i - 1][j - 1] + 2$</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">minDistance</span><span class="token punctuation">(</span>string word1<span class="token punctuation">,</span> string word2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> <span class="token function">dp</span><span class="token punctuation">(</span>word1<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token generic-function"><span class="token function">vector</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">(</span>word2<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2881,9 +2880,9 @@ dp<span class="token punctuation">[</span><span class="token punctuation">.</spa
         <span class="token punctuation">}</span>
         <span class="token keyword">return</span> dp<span class="token punctuation">[</span>word1<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>word2<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145445.png" alt="583.两个字符串的删除操作1" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145445.png" alt="583.两个字符串的删除操作1" style="zoom:50%;">
 
 <p>另外一种解法：</p>
 <p>这题和<a target="_blank" rel="noopener" href="https://programmercarl.com/1143.%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97.html">动态规划：1143.最长公共子序列</a>基本相同，只要求出两个字符串的最长公共子序列长度即可，那么除了最长公共子序列之外的字符都是必须删除的，最后用两个字符串的总长度减去两个最长公共子序列的长度就是删除的最少步数。</p>
@@ -2971,17 +2970,17 @@ d |  2  |  1  |
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145503.jpg" alt="4" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145503.jpg" alt="4" style="zoom:50%;">
 
 
 
-<img src="./images/441.jpg" alt="img" style="zoom:50%;">
+<img src="D:/notebook/Leetcode刷题/images/441.jpg" alt="img" style="zoom:50%;">
 
 <h5 id="扩展思维"><a href="#扩展思维" class="headerlink" title="扩展思维"></a><strong>扩展思维</strong></h5><p>以上的思路就是最经典的动态规划的思路。但是我们可以扩展一下，动态规划是<strong>自底向上</strong>求解，递归解法是<strong>自顶向下</strong>求解。</p>
 <p>可以思考一下递归解法。</p>
 <p>递归解法的思路就是：<strong>一般都是用两个指针 <code>i, j</code> 分别指向两个字符串的最后，然后一步步往前移动，缩小问题的规模</strong>。</p>
 <p>设两个字符串分别为 <code>"rad"</code> 和 <code>"apple"</code>，为了把 <code>s1</code> 变成 <code>s2</code>，算法会这样进行：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145509.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145509.gif" alt="img" style="zoom:50%;">
 
 <p>base case 是 <code>i</code> 走完 <code>s1</code> 或 <code>j</code> 走完 <code>s2</code>，可以直接返回另一个字符串剩下的长度。</p>
 <p>对于每对字符 <code>s1[i]</code> 和 <code>s2[j]</code>，可以有四种操作：</p>
@@ -3046,7 +3045,7 @@ else:
 <h5 id="题目扩展"><a href="#题目扩展" class="headerlink" title="题目扩展"></a>题目扩展</h5><p>往往很多时候不仅要找出最小编辑距离，还要找出<strong>最小编辑的路径。</strong>这个时候又该怎么写呢？</p>
 <p>思路：修改<code>dp</code>数组，增加额外记录最优路径信息。具体实现可以自定义一个结构体或者采用<code>pair&lt;int, int&gt;</code>。<code>val</code> 表示之前的 <code>dp</code> 数组的数值，<code>choice</code> 属性代表操作，即<strong>记录上一个位置到目前的位置的操作</strong>。在做最优选择时，顺便把操作记录下来，然后就从结果反推具体操作。</p>
 <p>其实也不需要这么麻烦，直接使用<code>dp</code>数组。顺着三个方向上最小的<code>dp</code>值向前回溯就可以了。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145520.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145520.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
@@ -3143,7 +3142,7 @@ else:
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>运行输出结果：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145529.png" alt="image-20220614143928708" style="zoom: 67%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145529.png" alt="image-20220614143928708" style="zoom: 67%;">
 
 
 
@@ -3285,26 +3284,26 @@ else:
 <p><strong>$dp[i][j]$：字符串s在[i, j]范围内最长的回文子序列的长度为$dp[i][j]$<strong>。</strong>从中间向两端扩散。</strong></p>
 <p>在判断回文子串的题目中，关键逻辑就是看$s[i]$与$s[j]$是否相同。</p>
 <p>如果$s[i]$与$s[j]$相同，那么$dp[i][j] = dp[i + 1][j - 1] + 2$;</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145544.jpg" alt="516.最长回文子序列" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145544.jpg" alt="516.最长回文子序列" style="zoom:50%;">
 
 <p>如果$s[i]$与$s[j]$不相同，说明$s[i]$和$s[j]$的同时加入 并不能增加$[i,j]$区间回文子串的长度，那么分别加入$s[i]、s[j]$看看哪一个可以组成最长的回文子序列。</p>
 <p>加入$s[j]$的回文子序列长度为$dp[i + 1][j]$。</p>
 <p>加入$s[i]$的回文子序列长度为$dp[i][j - 1]$。</p>
 <p>那么$dp[i][j]$一定是取最大的，即：$dp[i][j] = max(dp[i + 1][j], dp[i][j - 1])$;</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145550.jpg" alt="516.最长回文子序列1" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145550.jpg" alt="516.最长回文子序列1" style="zoom:50%;">
 
 <p><strong>初始化：</strong></p>
 <p>首先要考虑当$i$ 和$j$ 相同的情况，从递推公式：$dp[i][j] = dp[i + 1][j - 1] + 2$; 可以看出 递推公式是计算不到 $i$ 和$j$相同时候的情况。</p>
 <p>所以需要手动初始化一下，当$i$与$j$相同，那么$dp[i][j]$一定是等于1的，即：一个字符的回文子序列长度就是1。</p>
 <p>其他情况$dp[i][j]$初始为0就行，这样递推公式：$dp[i][j] = max(dp[i + 1][j], dp[i][j - 1])$; 中$dp[i][j]$才不会被初始值覆盖。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145556.png" alt="516_3.png" style="zoom: 25%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145556.png" alt="516_3.png" style="zoom: 25%;">
 
 <p><strong>遍历顺序：</strong></p>
 <p>从递推公式$dp[i][j] = dp[i + 1][j - 1] + 2 $和 $dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]) $可以看出，$dp[i][j]$是依赖于$dp[i + 1][j - 1] $和 $dp[i + 1][j]$，</p>
 <p>也就是从矩阵的角度来说，$dp[i][j] $下一行的数据。 <strong>所以遍历$i$的时候一定要从下到上遍历，这样才能保证，下一行的数据是经过计算的</strong>。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145602.jpg" alt="516.最长回文子序列2" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145602.jpg" alt="516.最长回文子序列2" style="zoom:50%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145608.GIF" alt="516_5.GIF" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145608.GIF" alt="516_5.GIF" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -3344,7 +3343,7 @@ else:
 <p><strong>如果鸡蛋没碎</strong>，那么鸡蛋的个数 <code>K</code> 不变，搜索的楼层区间应该从 <code>[1..N]</code> 变为 <code>[i+1..N]</code> 共 <code>N-i</code> 层楼。</p>
 <p>如果鸡蛋碎了，F 应该在第 j 层下面，否则，F 应该在第 j 层上面；</p>
 <p>鸡蛋是碎了还是没碎，取决于哪种情况下尝试次数更多，因为我们想求的是<strong>最坏</strong>情况下的结果。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145651.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145651.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//使用递归，自下而上的方式：</span>
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -3520,7 +3519,7 @@ else:
 
 
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514145727.jpg" alt="20211121223754" style="zoom: 150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514145727.jpg" alt="20211121223754" style="zoom: 150%;">
                 
             </div>
             <hr/>
@@ -4051,7 +4050,7 @@ else:
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

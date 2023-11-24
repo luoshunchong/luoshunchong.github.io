@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="贪心算法, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="贪心算法, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>贪心算法 | ShunchongLuo</title>
+    <title>贪心算法 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -491,7 +491,7 @@
 
 <p><strong>右边界排序之后</strong>，局部最优：优先选右边界小的区间，所以从左向右遍历，留给下一个区间的空间大一些，从而尽量避免交叉。全局最优：选取最多的非交叉区间。</p>
 <p>给定若干个区间，<strong>求无重叠区间的个数</strong>。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191849.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191849.gif" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -519,7 +519,7 @@
 
 
 
-<h4 id="Leetcode-452-用最少数量的箭引爆气球"><a href="#Leetcode-452-用最少数量的箭引爆气球" class="headerlink" title="Leetcode 452. 用最少数量的箭引爆气球"></a>Leetcode <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/">452. 用最少数量的箭引爆气球</a></h4><p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191855.png" alt="452.用最少数量的箭引爆气球"></p>
+<h4 id="Leetcode-452-用最少数量的箭引爆气球"><a href="#Leetcode-452-用最少数量的箭引爆气球" class="headerlink" title="Leetcode 452. 用最少数量的箭引爆气球"></a>Leetcode <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/">452. 用最少数量的箭引爆气球</a></h4><p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191855.png" alt="452.用最少数量的箭引爆气球"></p>
 <p>局部最优：当气球出现重叠，一起射，所用弓箭最少。全局最优：把所有气球射爆所用弓箭最少。</p>
 <p>按照<strong>左端点排序</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -561,11 +561,11 @@
 <p>举例来说，如果输入 <code>meetings = [[0,30],[5,10],[15,20]]</code>，那么我们就给数组中 <code>[0,30],[5,10],[15,20]</code> 这几个索引区间分别加一，最后遍历数组，求个最大值就行了。差分数组技巧可以在 O(1) 时间对整个区间的元素进行加减，所以可以拿来解决这道题。</p>
 <p><strong>基于差分数组的思路，我们可以推导出一种更高效，更优雅的解法</strong>。</p>
 <p>我们首先把这些会议的时间区间进行投影：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191900.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191900.jpeg" alt="img" style="zoom:50%;">
 
 <p>红色的点代表每个会议的开始时间点，绿色的点代表每个会议的结束时间点。</p>
 <p>现在假想有一条带着计数器的线，在时间线上从左至右进行扫描，每遇到红色的点，计数器 <code>count</code> 加一，每遇到绿色的点，计数器 <code>count</code> 减一：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191904.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191904.jpeg" alt="img" style="zoom:50%;">
 
 <p><strong>这样一来，每个时刻有多少个会议在同时进行，就是计数器 <code>count</code> 的值，<code>count</code> 的最大值，就是需要申请的会议室数量</strong>。</p>
 <p>这个扫描线其实就是差分数组的遍历过程，所以我们说这是差分数组技巧衍生出来的解法。</p>
@@ -610,10 +610,10 @@
 
 <p>题目问我们，去除被覆盖区间之后，还剩下多少区间，<strong>那么我们可以先算一算，被覆盖区间有多少个，然后和总数相减就是剩余区间数</strong>。</p>
 <p>起点升序排列，终点降序排列</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191909.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191909.jpg" alt="img" style="zoom:50%;">
 
 <p>排序之后，两个相邻区间可能有如下三种相对位置：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191911.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191911.jpeg" alt="img" style="zoom:50%;">
 
 <p>对于这三种情况，我们应该这样处理：</p>
 <p>对于情况一，找到了覆盖区间。</p>
@@ -730,7 +730,7 @@
 <li>统计每一个字符最后出现的位置</li>
 <li>从头遍历字符，并更新字符的最远出现下标，如果找到字符最远出现位置下标和当前下标相等了，则找到了分割点</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191920.png" alt="763.划分字母区间"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191920.png" alt="763.划分字母区间"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">partitionLabels</span><span class="token punctuation">(</span>string S<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -771,7 +771,7 @@
 <p>思路是先按照起点升序排序，如果起点相同的话按照终点降序排序，主要考虑到这道题的以下两个特点：</p>
 <p>1、要用若干短视频凑出完成视频 <code>[0, T]</code>，至少得有一个短视频的起点是 0。</p>
 <p>2、如果有几个短视频的起点都相同，那么一定应该选择那个最长（终点最大）的视频。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191926.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191926.jpeg" alt="img" style="zoom:50%;">
 
 <p>排序之后，从第一个区间开始选，每当选中一个区间 <code>x</code>（图中红色的区间），我们会比较所有起点小于 <code>x.start</code> 的区间，根据贪心策略，它们中终点最大的那个区间就是下一个会被选中的区间，以此类推。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -805,7 +805,7 @@
 <p>会议室可以看做一个背包，每个会议可以看做一个物品，物品的价值就是会议的时长，请问你如何选择物品（会议）才能最大化背包中的价值（会议室的使用时长）？</p>
 <p>当然，这里背包的约束不是一个最大重量，而是各个物品（会议）不能互相冲突。把各个会议按照结束时间进行排序，然后参考前文 <a target="_blank" rel="noopener" href="https://labuladong.github.io/algo/3/25/80/">0-1 背包问题详解</a> 的思路即可解决，等我以后有机会可以写一写这个问题。</p>
 <p><strong>第七个场景</strong>，给你若干会议，让你合理申请会议室。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191930.jpg" alt="img" style="zoom: 67%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191930.jpg" alt="img" style="zoom: 67%;">
 
 
 
@@ -817,7 +817,7 @@
 解释：这个序列包含几个长度为 7 摆动序列。
 其中一个是 [1, 17, 10, 13, 10, 16, 8] ，各元素之间的差值为 (16, -7, 3, -3, 6, -8) 。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191935.png" alt="376.摆动序列"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191935.png" alt="376.摆动序列"></p>
 <p>思路：记录<strong>当前坡度</strong>和<strong>前一个坡度</strong>，遍历一遍，统计峰值个数。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -973,7 +973,7 @@
 解释：可以先跳 1 步，从下标 0 到达下标 1, 然后再从下标 1 跳 3 步到达最后一个下标。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>贪心算法局部最优解：每次取最大跳跃步数（取最大覆盖范围），整体最优解：最后得到整体最大覆盖范围，看是否能到终点</strong>。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191945.png" alt="55.跳跃游戏" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191945.png" alt="55.跳跃游戏" style="zoom:50%;">
 
 <p><strong>思考：</strong>尽量采用覆盖这个关键点去写题。不用拘泥于每次究竟跳跳几步，而是看覆盖范围，覆盖范围内一定是可以跳过来的，不用管是怎么跳的。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -1215,19 +1215,19 @@
 <p>当insert数据的时候，如果已经大于capicity，capicity会成倍扩容，但<strong>对外暴漏的size其实仅仅是+1。</strong></p>
 <p>那么既然vector底层实现是普通数组，怎么扩容的？</p>
 <p>就是<strong>重新申请一个二倍于原数组大小的数组，然后把数据都拷贝过去，并释放原数组内存。</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191956.png" alt="vector原理" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191956.png" alt="vector原理" style="zoom:50%;">
 
 <p>原vector中的size和capicity相同都是3，初始化为1 2 3，此时要push_back一个元素4。</p>
 <p>那么底层其实就要申请一个大小为6的普通数组，并且把原元素拷贝过去，释放原数组内存，<strong>注意图中底层数组的内存起始地址已经变了</strong>。<strong>同时也注意此时capicity和size的变化。</strong></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192002.png" alt="贪心" style="zoom:150%;">
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192002.png" alt="贪心" style="zoom:150%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192020.png" alt="贪心" style="zoom:150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192020.png" alt="贪心" style="zoom:150%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192043.jpg" alt="贪心" style="zoom:150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192043.jpg" alt="贪心" style="zoom:150%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192050.jpg" alt="贪心" style="zoom:150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192050.jpg" alt="贪心" style="zoom:150%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192057.jpg" alt="贪心" style="zoom:150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192057.jpg" alt="贪心" style="zoom:150%;">
 
                 
             </div>
@@ -1763,7 +1763,7 @@
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

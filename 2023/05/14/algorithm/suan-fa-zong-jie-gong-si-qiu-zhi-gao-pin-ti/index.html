@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="算法总结（公司求职高频题）, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="算法总结（公司求职高频题）, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>算法总结（公司求职高频题） | ShunchongLuo</title>
+    <title>算法总结（公司求职高频题） | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -879,7 +879,7 @@ ListNode<span class="token operator">*</span> <span class="token function">check
 
 <p>类似于leetcode的70题爬楼梯，则可以理解：走n步到0的方案数=走n-1步到1的方案数 + 走n-1步到9的方案数。</p>
 <p>因此，若设$dp[i][j]$为<strong>从0点出发走i步到j点的方案数</strong>，则递推式为：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191625.png" alt="图片" style="zoom:80%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191625.png" alt="图片" style="zoom:80%;">
 
 <p>ps:公式之所以取余是因为$j-1$或$j+1$可能会超过圆环0~9的范围</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">backToOrigin</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -973,7 +973,7 @@ stack<span class="token operator">&lt;</span><span class="token keyword">int</sp
 <p>最容易想到的做法是遍历一遍数组，对于每个元素计算前面比它小的数的和，累加即可得出结果，时间复杂度是$O(N²)$。</p>
 <p>本题的更好的算法是借助 「归并排序」的思路。smallSum([1,3,4,2,5])实际就等于smallSum([1,3,4])+smallSum([2,5])+c。之所以还有个c，是因为左半段数组中可能存在比右半段数组小的元素，这个不能遗漏。通过归并排序的merge过程，我们可以很方便计算这个c。</p>
 <p>在merge时，左段数组L和右段数组R都是有序的了。结合下边的示意图，当L[i]&lt;=R[j]时，表示L[i]比R[j]~R[r]的元素都要小。因此c需加上j及以后元素的个数*L[i]，即c+=(r-j+1) * L[i]。大概思路就是这样，下面附上C++版的参考代码。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191635.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191635.png" alt="图片" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
@@ -1024,7 +1024,7 @@ LL <span class="token function">getSmallSum</span><span class="token punctuation
 <h2 id="面试字节前必看的高频题——木头切割问题"><a href="#面试字节前必看的高频题——木头切割问题" class="headerlink" title="面试字节前必看的高频题——木头切割问题"></a>面试字节前必看的高频题——木头切割问题</h2><p><strong>题目描述:</strong></p>
 <p>给定长度为n的数组，每个元素代表一个木头的长度，木头可以任意截断，从这堆木头中截出至少k个相同长度为m的木块。已知k，求$max(m)$。</p>
 <p>输入两行，第一行n, k，第二行为数组序列。输出最大值。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191640.png" alt="image-20220520141155531" style="zoom:80%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191640.png" alt="image-20220520141155531" style="zoom:80%;">
 
 <p>思路：</p>
 <p>方法一：暴力。大概思路就是从1遍历到木棍最长的长度，每次遍历的长度作为m，如果可以将所有木头截出来k个长度为m的木块，则更新最大值，最后输出最大值即可。可以通过下面的伪代码片段辅助理解：</p>
@@ -1189,7 +1189,7 @@ string <span class="token function">add36Strings</span><span class="token punctu
 <p>ps:坐标值均为double型</p>
 <p><strong>方法一：面积比较</strong></p>
 <p>判断△ABO+△BOC+△COA的面积与△ABC是否相等。若相等则O在内部，反之则在外部。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191652.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191652.png" alt="图片" style="zoom:50%;">
 
 <p>​                                                                                        点O分别在△ABC内外的图示</p>
 <p>如何计算三角形的面积呢？通过坐标，很容易计算三角形的边长。再由海伦公式计算面积。</p>
@@ -1235,7 +1235,7 @@ string <span class="token function">add36Strings</span><span class="token punctu
 <p>由于double类型计算时有精度问题，因此这种方法存在误差。</p>
 <p><strong>方法二：向量叉乘</strong></p>
 <p>若点O在三角形内部，则沿着三角形的边逆时针走，点O一定保持在边的左侧。如图示，点在逆时针行走时，在AB，BC，CA的左侧。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191700.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191700.png" alt="图片" style="zoom:50%;">
 
 <p>如何判断点在一个边的左侧呢？</p>
 <p>可以<strong>借助向量叉乘来判断O是否在向量AB的哪一侧。若计算向量AO与向量AB的叉乘的值为正，则表示O在AB的左侧，反之为右侧。</strong></p>
@@ -1245,7 +1245,7 @@ string <span class="token function">add36Strings</span><span class="token punctu
 <p>本题的核心思路就是这样。如果要让手撕代码，题目可能没有说输入的3个点是逆时针顺序的。比如，上图中如果依次输入的是A,C,B的坐标，那就不行了。</p>
 <p>怎么解决呢？假设依次输入的点分别是p1,p2,p3。</p>
 <p>我们判断若p3在的右侧，则表示输入的点的顺序是顺时针的，即A,C,B式的输入，将p2,p3调换位置即可保证顺序是逆时针。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191702.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191702.png" alt="图片" style="zoom:50%;">
 
 <p>详情可以看代码。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
@@ -1290,7 +1290,7 @@ string <span class="token function">add36Strings</span><span class="token punctu
 <p>例如，ip地址为10.0.3.193，把每段拆分成一个二进制形式组合起来为<code>00001010 00000000 00000011 11000001</code>，然后把这个二进制数转变成十进制整数就是167773121。</p>
 <p><strong>思路：</strong></p>
 <p>借助位运算实现。如IP 10.0.3.193，将10左移24位，0左移16位，3左移8位，193左移0位。4个seg<code>或运算</code>，即为结果。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191707.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191707.png" alt="图片" style="zoom:50%;">
 
 <p>上代码，python 7行代码就可以实现（为方便理解，代码没有使用循环）</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">ipToInt</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -1303,7 +1303,7 @@ string <span class="token function">add36Strings</span><span class="token punctu
 
 <p>注意：C++实现时，结果要使用<strong>无符号整数</strong>。否则，高位为1时，结果会显示负数。</p>
 <p>我们再来看一下如何将整数转成IP。将整数和255做<code>与运算</code>，结果为IP的第4段。整数右移8位，和255做<code>与运算</code>的结果就是IP的第3段…最后再将每轮与运算的结果拼接起来便是最终的IP地址。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191712.png" alt="图片"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191712.png" alt="图片"></p>
 <p>以下是Python代码的实现（为方便理解，代码没有使用循环）</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">intToIp</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span> 
     res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
@@ -1379,7 +1379,7 @@ int main() {
 <p>若存在循环依赖则返回空；不存在依赖则返回可行的编译顺序。</p>
 <p>思路：</p>
 <p>若给定一个依赖关系是[[0,2],[1,2],[2,3],[2,4]]，如图所示</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191719.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191719.png" alt="图片" style="zoom:50%;">
 
 <p>可以看出，它们之间不存在循环依赖。</p>
 <p>可行的编译序列是[0,1,2,3,4]，也可以是[1,0,2,4,3]等。</p>
@@ -1395,31 +1395,31 @@ int main() {
 </blockquote>
 </blockquote>
 <p>用下图举个例子，看看拓扑排序算法的过程。res用于存储结果序列。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191723.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191723.png" alt="图片" style="zoom:50%;">
 
 <p>入度为0的点有两个，我们任选一个。比如选择<code>点0</code>，记录至res；删除<code>点0</code>及以它为起点的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191726.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191726.png" alt="图片" style="zoom:50%;">
 
 <p>然后选择<code>点1</code>，同样记录下来；删除<code>点1</code>及以它为起点的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191729.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191729.png" alt="图片" style="zoom:50%;">
 
 <p>入度为0的点现在只有点2，把它记录下来；删除<code>点2</code>及以它为起点的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191732.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191732.png" alt="图片" style="zoom:50%;">
 
 <p>同理。选择<code>点3</code>，记录下来；删除<code>点3</code>及以它为起点的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191735.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191735.png" alt="图片" style="zoom:50%;">
 
 <p>选择<code>点4</code>，记录下来；删除<code>点4</code>及以它为起点的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191738.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191738.png" alt="图片" style="zoom:50%;">
 
 <p>图为空，算法结束。</p>
 <p>最终，res存储的就是拓扑排序的结果，即题目中的可行编译顺序。</p>
 <p><strong>如果图中存在循环依赖呢？</strong></p>
 <p>例如依赖关系是[[0,1],[1,2],[2,1]，如图所示。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191740.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191740.png" alt="图片" style="zoom:50%;">
 
 <p>按照拓扑排序的算法，找到入度为0的<code>点0</code>存下来，然后删除。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191743.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191743.png" alt="图片" style="zoom:50%;">
 
 <p>然后就没有入度为0的点了，算法结束！</p>
 <p>我们发现，可以使用<code>res.size() == n</code> <strong>来判断图中是否有环</strong>。其中，n为点的个数。</p>
@@ -1429,7 +1429,7 @@ int main() {
 <p>如果你感觉拓扑排序没问题了，去尝试做Leetcode210. 课程表 II吧~</p>
 <blockquote>
 <blockquote>
-<p>PS：之前没接触过图的同学，可能不太理解参考代码中存储图结构的g。其实很简单，对于下图来说。<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191746.png" alt="图片" style="zoom:50%;"></p>
+<p>PS：之前没接触过图的同学，可能不太理解参考代码中存储图结构的g。其实很简单，对于下图来说。<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191746.png" alt="图片" style="zoom:50%;"></p>
 </blockquote>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">g = [[2]     #表示0-&gt;2
      [2]     #表示1-&gt;2
@@ -1506,7 +1506,7 @@ int main() {
 <p>思路：</p>
 <p>我们可以想到，通过辅助栈与乱序栈之间的“倒腾”，可以使辅助栈升序排列，返回辅助栈即可。</p>
 <p>那么，如何“倒腾”就成为问题的关键。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191802.png" alt="图片" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191802.png" alt="图片" style="zoom:50%;">
 
 <p>可以这么做：维护辅助栈为单调递增栈。</p>
 <p>简单说，就是<strong>保证“倒腾”过程的任何时候，辅助栈的元素都是从小到大排序的！</strong></p>
@@ -1515,12 +1515,12 @@ int main() {
 <p>用<code>[4, 2, 1, 3]</code>数组举个例子，模拟一下“倒腾”的过程。</p>
 <p>再强调一遍，“倒腾”时要确保辅助栈是从小到大排序的！</p>
 <p>如图，将<code>3</code>出栈，存至辅助栈。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191805.png" alt="图片" style="zoom: 50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191805.png" alt="图片" style="zoom: 50%;">
 
 <p>接着，如果将<code>1</code>移至辅助栈就破坏了辅助栈升序排列的约定，因此不能直接将<code>1</code>挪到辅助栈。</p>
 <p>而应该如下图所示，将<code>1</code>存到临时变量中。</p>
 <p>然后将辅助栈的元素弹到原始栈中，直到<code>1</code>可以挪到辅助栈为止。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514191809.png" alt="图片" style="zoom: 67%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514191809.png" alt="图片" style="zoom: 67%;">
 
 <p>循环执行上面描述的操作，当原始栈为空时，辅助栈便满足<code>[1, 2, 3, 4]</code>。</p>
 <p><strong>C++ 参考代码</strong></p>
@@ -2157,7 +2157,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

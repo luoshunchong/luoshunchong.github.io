@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="位运算, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="位运算, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>位运算 | ShunchongLuo</title>
+    <title>位运算 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -471,7 +471,7 @@
 </li>
 <li><p>n &amp; (n−1)，其运算结果恰为把 <strong>n 的二进制位中的最低位的 1 变为 0 之后的结果。</strong></p>
 <p>如：6 &amp; (6-1) = 4, $6 = (110)_2$, $4 = (100)_2$ ，运算结果 4 即为把 6 的二进制位中的最低位的 1 变为 0 之后的结果。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192141.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192141.png" alt="img" style="zoom:50%;">
 
 <p>其核心逻辑就是，<code>n - 1</code> 一定可以消除最后一个 1，同时把其后的 0 都变成 1，这样再和 <code>n</code> 做一次 <code>&amp;</code> 运算，就可以仅仅把最后一个 1 变成 0 了。</p>
 </li>
@@ -606,7 +606,7 @@
 <li>记下进位，这个例子中只在最后一位相加时产生一个进位，结果是二进制的10；  <strong>与运算</strong></li>
 <li>把前两步结果相加，得到10110，转换为十进制正好是22.   <strong>重复前两步的过程。</strong></li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192150.png" alt="image.png" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192150.png" alt="image.png" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">while</span> <span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -617,7 +617,7 @@
     <span class="token keyword">return</span> a<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192154.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192154.jpg" alt="img" style="zoom:50%;">
 
 <h3 id="位运算实现加减乘除法"><a href="#位运算实现加减乘除法" class="headerlink" title="位运算实现加减乘除法"></a>位运算实现加减乘除法</h3><p>加法</p>
 <p>通过  异或运算  和  与运算  实现</p>
@@ -838,7 +838,7 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
 <p>尽量使用位运算来做，因为好记，快。</p>
 <h3 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h3><p>首先我们要明确一点，对于一个$m^n$，当$n$为偶数时，$ m^n=(m^2)^\frac{n}{2}$。</p>
 <h4 id="剑指-Offer-16-数值的整数次方"><a href="#剑指-Offer-16-数值的整数次方" class="headerlink" title="剑指 Offer 16. 数值的整数次方"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/">剑指 Offer 16. 数值的整数次方</a></h4><p>实现 $pow(x,n)$ ，即计算 x 的 n 次幂函数（即，$x^n$）。不得使用库函数，同时不需要考虑大数问题。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192206.png" alt="image-20220418185930154" style="zoom: 67%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192206.png" alt="image-20220418185930154" style="zoom: 67%;">
 
 <p><strong>使用快速幂的方法：</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
@@ -872,11 +872,11 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
 	<span class="token keyword">return</span> now <span class="token operator">*</span> f<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514192210.png" alt="在这里插入图片描述"></p>
+<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514192210.png" alt="在这里插入图片描述"></p>
 <p>输入：</p>
-<p><img src="/./images/88abda8eb18f4a3dbd913217d28522a7.png" alt="在这里插入图片描述"></p>
+<p><img src="D:/notebook/Leetcode刷题/images/88abda8eb18f4a3dbd913217d28522a7.png" alt="在这里插入图片描述"></p>
 <p>输出：</p>
-<p><img src="/./images/976aa53dc9504f1facedcb687bddc59d.png" alt="在这里插入图片描述"></p>
+<p><img src="D:/notebook/Leetcode刷题/images/976aa53dc9504f1facedcb687bddc59d.png" alt="在这里插入图片描述"></p>
 <p>明显的看出规律，答案其实就是$2^{n-1}$。快速幂求解即可，时间复杂度$O(log(n))$</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstring&gt;</span></span>
@@ -898,6 +898,8 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
 	<span class="token function">qpow</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lld"</span><span class="token punctuation">,</span> ans<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 
 
                 
@@ -1138,30 +1140,29 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/05/14/algorithm/wei-yun-suan/">
+                <a href="/2023/05/14/algorithm/zhan-dui-lie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="位运算">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="栈（队列）">
                         
-                        <span class="card-title">位运算</span>
+                        <span class="card-title">栈（队列）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            位运算 | LeetCode真题 | 教程
+                            栈（队列） | LeetCode真题 | 教程
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1174,16 +1175,15 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/">
-                        <span class="chip bg-color">位运算</span>
-                    </a>
-                    
                     <a href="/tags/Algorithm/">
                         <span class="chip bg-color">Algorithm</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A0%88%EF%BC%88%E9%98%9F%E5%88%97%EF%BC%89/">
+                        <span class="chip bg-color">栈（队列）</span>
                     </a>
                     
                 </div>
@@ -1436,7 +1436,7 @@ a <span class="token operator">=</span> a <span class="token operator">^</span> 
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

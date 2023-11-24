@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="回溯法、分治、图, 罗顺茺, Luo Shunchong">
-    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途。">
+    <meta name="keywords" content="回溯法、分治、图, 调皮捣蛋, Mr Luo">
+    <meta name="description" content="心若没有栖息的地方，到哪里都是流浪！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>回溯法、分治、图 | ShunchongLuo</title>
+    <title>回溯法、分治、图 | Mr Luo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">ShunchongLuo</span>
+                    <span class="logo-span">Mr Luo</span>
                 </a>
             </div>
             
@@ -111,10 +111,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">ShunchongLuo</div>
+        <div class="logo-name">Mr Luo</div>
         <div class="logo-desc">
             
-            从来没有真正的绝境，只有心灵的迷途。
+            心若没有栖息的地方，到哪里都是流浪！
             
         </div>
     </div>
@@ -524,7 +524,7 @@
 
 
 <h2 id="组合问题"><a href="#组合问题" class="headerlink" title="组合问题"></a>组合问题</h2><h3 id="Leetcode-77-组合"><a href="#Leetcode-77-组合" class="headerlink" title="Leetcode 77  组合"></a>Leetcode 77  组合</h3><p><strong>N个数里面按一定规则找出k个数的集合</strong> </p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153928.png" alt="image-20211017163704722"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153928.png" alt="image-20211017163704722"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> result<span class="token punctuation">;</span> <span class="token comment">// 存放符合条件结果的集合</span>
@@ -551,7 +551,7 @@
 
 <h3 id="剪枝"><a href="#剪枝" class="headerlink" title="剪枝"></a>剪枝</h3><p> 在题77的基础上进行剪枝优化</p>
 <p>举一个例子，n = 4，k = 4的话，那么第一层for循环的时候，从元素2开始的遍历都没有意义了。 在第二层for循环，从元素3开始的遍历都没有意义了。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153937.png" alt="77.组合4"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153937.png" alt="77.组合4"></p>
 <p><strong>可以剪枝的地方就在递归中每一层的for循环所选择的起始位置</strong>。</p>
 <p><strong>如果for循环选择的起始位置之后的元素个数 已经不足 我们需要的元素个数了，那么就没有必要搜索了</strong>。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> startIndex<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -676,7 +676,7 @@
 
 
 <h3 id="Leetcode-39-组合总和"><a href="#Leetcode-39-组合总和" class="headerlink" title="Leetcode 39 组合总和"></a>Leetcode 39 组合总和</h3><p>从无重复元素的数组 candidates 找出所有可以使数字和为 target 的组合 。（可以重复取元素，换句话说<strong>同一树枝允许重复</strong>）</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153945.png" alt="39.组合总和"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153945.png" alt="39.组合总和"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 版本一</span>
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -743,7 +743,7 @@
 
 <h3 id="Leetcode-40-组合总和II"><a href="#Leetcode-40-组合总和II" class="headerlink" title="Leetcode 40 组合总和II"></a>Leetcode 40 组合总和II</h3><p>从数组 candidates 找出所有可以使数字和为 target 的组合 。</p>
 <p>candidates 中的每个数字在每个组合中只能使用一次。(<strong>同一树层中允许重复</strong>)</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153951.png" alt="40.组合总和II"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153951.png" alt="40.组合总和II"></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
     vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> result<span class="token punctuation">;</span>
@@ -863,7 +863,7 @@
 <li>在递归循环中如何截取子串</li>
 <li>如何判断回文</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514153958.jpg" alt="131.分割回文串"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514153958.jpg" alt="131.分割回文串"></p>
 <p><strong>其实切割问题类似组合问题</strong>。</p>
 <p>例如对于字符串abcdef：</p>
 <ul>
@@ -1022,7 +1022,7 @@
 <p>这个地方要注意和排列区分开来！</p>
 <h3 id="Leetcode-78-子集"><a href="#Leetcode-78-子集" class="headerlink" title="Leetcode  78 子集"></a>Leetcode  78 子集</h3><p>给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。</p>
 <p>说明：解集不能包含重复的子集。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154008.png" alt="78.子集"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154008.png" alt="78.子集"></p>
 <p><strong>遍历这个树的时候，把所有节点都记录下来，就是要求的子集集合</strong>。</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -1054,7 +1054,7 @@
 <p>去重（同一树层去重）</p>
 <h2 id="排列问题"><a href="#排列问题" class="headerlink" title="排列问题"></a>排列问题</h2><p>N个数按一定规则全排列，有几种排列方式</p>
 <h3 id="Leetcode-46-全排列"><a href="#Leetcode-46-全排列" class="headerlink" title="Leetcode 46  全排列"></a>Leetcode 46  全排列</h3><p>给定一个 没有重复 数字的序列，返回其所有可能的全排列。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154013.png" alt="46.全排列"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154013.png" alt="46.全排列"></p>
 <p><strong>不需要pos,使用一个used数组记录是否使用过</strong></p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -1185,7 +1185,7 @@
 <li>例如，行程 <code>["JFK", "LGA"]</code> 与 <code>["JFK", "LGB"]</code> 相比就更小，排序更靠前。</li>
 </ul>
 <p>假定所有机票至少存在一种合理的行程。且所有的机票 必须都用一次 且 只能用一次。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154023.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154023.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
 输出：["JFK","ATL","JFK","SFO","ATL","SFO"]
@@ -1201,7 +1201,7 @@
 <p>可以使用<code>unordered_map</code>来存储，在遍历 <code>unordered_map&lt;出发机场, map&lt;到达机场, 航班次数&gt;&gt; targets</code>的过程中，<strong>可以使用”航班次数”这个字段的数字做相应的增减，来标记到达机场是否使用过了。</strong></p>
 <p>如果“航班次数”大于零，说明目的地还可以飞，如果如果“航班次数”等于零说明目的地不能飞了，而不用对集合做删除元素或者增加元素的操作。</p>
 <p>本题以输入：<code>[["JFK", "KUL"], ["JFK", "NRT"], ["NRT", "JFK"]</code>为例，抽象为树形结构如下：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154028.png" alt="332.重新安排行程1" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154028.png" alt="332.重新安排行程1" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -1239,7 +1239,7 @@ unordered_map<span class="token operator">&lt;</span>string<span class="token pu
 
 <h2 id="棋盘问题"><a href="#棋盘问题" class="headerlink" title="棋盘问题"></a>棋盘问题</h2><h3 id="51-N-皇后"><a href="#51-N-皇后" class="headerlink" title="51. N 皇后"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/n-queens/">51. N 皇后</a></h3><p>按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。<strong>n 皇后问题</strong> 研究的是如何将 <code>n</code> 个皇后放置在 <code>n×n</code> 的棋盘上，并且使皇后彼此之间不能相互攻击。</p>
 <p>给你一个整数 <code>n</code> ，返回所有不同的 <strong>n 皇后问题</strong> 的解决方案。每一种解法包含一个不同的 <strong>n 皇后问题</strong> 的棋子放置方案，该方案中 <code>'Q'</code> 和 <code>'.'</code> 分别代表了皇后和空位。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154033.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154033.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：n = 4
 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
@@ -1252,7 +1252,7 @@ unordered_map<span class="token operator">&lt;</span>string<span class="token pu
 <li>不能同斜线</li>
 </ol>
 <p>其实搜索皇后的位置，可以抽象为一棵树。用一个 3 * 3 的棋盘，将搜索过程抽象为一棵树，如图：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154036.jpg" alt="51.N皇后" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154036.jpg" alt="51.N皇后" style="zoom:50%;">
 
 <p>从图中，可以看出，<strong>二维矩阵中矩阵的高就是这棵树的高度，矩阵的宽就是树形结构中每一个节点的宽度。</strong></p>
 <p>那么我们用皇后们的约束条件，来回溯搜索这棵树，<strong>只要搜索到了树的叶子节点，说明就找到了皇后们的合理位置了</strong>。</p>
@@ -1315,7 +1315,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <li>数字 <code>1-9</code> 在每一个以粗实线分隔的 <code>3x3</code> 宫内只能出现一次。（请参考示例图）</li>
 </ol>
 <p>数独部分空格内已填入了数字，空白格用 <code>'.'</code> 表示。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154042.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154042.png" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">输入：board <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">"5"</span><span class="token punctuation">,</span><span class="token string">"3"</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"7"</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
               <span class="token punctuation">[</span><span class="token string">"6"</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"9"</span><span class="token punctuation">,</span><span class="token string">"5"</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">,</span><span class="token string">"."</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
@@ -1337,11 +1337,11 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
       <span class="token punctuation">[</span><span class="token string">"3"</span><span class="token punctuation">,</span><span class="token string">"4"</span><span class="token punctuation">,</span><span class="token string">"5"</span><span class="token punctuation">,</span><span class="token string">"2"</span><span class="token punctuation">,</span><span class="token string">"8"</span><span class="token punctuation">,</span><span class="token string">"6"</span><span class="token punctuation">,</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"7"</span><span class="token punctuation">,</span><span class="token string">"9"</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
 解释：输入的数独如上图所示，唯一有效的解决方案如下所示：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154046.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154046.png" alt="img" style="zoom:50%;">
 
 <p>N皇后问题 是因为每一行每一列只放一个皇后，只需要一层for循环遍历一行，递归来来遍历列，然后一行一列确定皇后的唯一位置。</p>
 <p>本题就不一样了，<strong>本题中棋盘的每一个位置都要放一个数字，并检查数字是否合法，解数独的树形结构要比N皇后更宽更深</strong>。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154050.png" alt="37.解数独" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154050.png" alt="37.解数独" style="zoom:50%;">
 
 <p>本题递归不用终止条件，解数独是要遍历整个树形结构寻找可能的叶子节点就立刻返回。</p>
 <p><strong>不用终止条件会不会死循环？</strong></p>
@@ -1418,7 +1418,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <li>时间复杂度：$O(n * 2^n)$，组合问题其实就是一种子集的问题，所以组合问题最坏的情况，也不会超过子集问题的时间复杂度。</li>
 <li>空间复杂度：$O(n)$，和子集问题同理。</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154100.png" style="zoom: 150%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154100.png" style="zoom: 150%;">
 
 <h2 id="思维扩展题"><a href="#思维扩展题" class="headerlink" title="思维扩展题"></a>思维扩展题</h2><h3 id="LCP-51-烹饪料理"><a href="#LCP-51-烹饪料理" class="headerlink" title="LCP 51. 烹饪料理"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/UEcfPD/">LCP 51. 烹饪料理</a></h3><pre class="line-numbers language-text" data-language="text"><code class="language-text">勇者背包内共有编号为 0 ~ 4 的五种食材，其中 materials[j] 表示第 j 种食材的数量。通过这些食材可以制作若干料理，cookbooks[i][j] 表示制作第 i 种料理需要第 j 种食材的数量，而 attribute[i] = [x,y] 表示第 i 道料理的美味度 x 和饱腹感 y。
 
@@ -1571,7 +1571,7 @@ public:
 <li>盘子只能从柱子顶端滑出移到下一根柱子;</li>
 <li>盘子只能叠在比它大的盘子上。</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154114.png" alt="p1.png" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154114.png" alt="p1.png" style="zoom:50%;">
 
 <p><strong>解题思路：递归与分治</strong></p>
 <p>这是一道递归方法的经典题目，乍一想还挺难理清头绪的，我们不妨先从简单的入手。</p>
@@ -1581,12 +1581,12 @@ public:
 <li><p>如果 n = 2 呢？这时候我们就要借助 B 了，因为小盘子必须时刻都在大盘子上面，共需要 4 步。</p>
 </li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154117.gif" alt="0806.gif" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154117.gif" alt="0806.gif" style="zoom:50%;">
 
 <ul>
 <li>如果 <code>n &gt; 2</code> 呢？思路和上面是一样的，我们把 n 个盘子也看成两个部分，一部分有 1 个盘子，另一部分有 n - 1 个盘子。</li>
 </ul>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154121.gif" alt="08061.gif" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154121.gif" alt="08061.gif" style="zoom:50%;">
 
 <p>观察上图，你可能会问：“那 n - 1 个盘子是怎么从 A 移到 C 的呢？”</p>
 <p>注意，<strong>当你在思考这个问题的时候，就将最初的 n 个盘子从 A 移到 C 的问题，转化成了将 n - 1 个盘子从 A 移到 C 的问题， 依次类推，直至转化成 1 个盘子的问题时，问题也就解决了。</strong>这就是分治的思想。</p>
@@ -1633,10 +1633,10 @@ public:
 
 <p>有没有发现其实和多叉树一模一样。所以图这种结构可以抽象成一颗多叉树。DFS/BFS都是可以适用的。</p>
 <p>不过呢，上面的这种实现是<code>「逻辑上的」</code>，实际上我们很少用这个 <code>Vertex</code> 类实现图，而是用常说的<strong>邻接表和邻接矩阵</strong>来实现。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154127.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154127.jpg" alt="img" style="zoom:50%;">
 
 <p>用邻接表和邻接矩阵的存储方式如下：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154130.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154130.jpeg" alt="img" style="zoom:50%;">
 
 <p>邻接表把每个节点 <code>x</code> 的邻居都存到一个列表里，然后把 <code>x</code> 和这个列表关联起来，就可以通过一个节点 <code>x</code> 找到它的所有相邻节点。</p>
 <p>邻接矩阵则是一个二维布尔数组，称为 <code>matrix</code>，如果节点 <code>x</code> 和 <code>y</code> 是相连的，那么就把 <code>matrix[x][y]</code> 设为 <code>true</code>（上图中绿色的方格代表 <code>true</code>）。如果想找节点 <code>x</code> 的邻居，去扫一圈 <code>matrix[x][..]</code> 就行了。</p>
@@ -1669,7 +1669,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <p><strong>无向图怎么实现</strong>？也很简单，所谓的「无向」，是不是等同于「双向」？</p>
 <p>如果连接无向图中的节点 <code>x</code> 和 <code>y</code>，把 <code>matrix[x][y]</code> 和 <code>matrix[y][x]</code> 都变成 <code>true</code> 不就行了；邻接表也是类似的操作，在 <code>x</code> 的邻居列表里添加 <code>y</code>，同时在 <code>y</code> 的邻居列表里添加 <code>x</code>。</p>
 <h2 id="搜索技巧"><a href="#搜索技巧" class="headerlink" title="搜索技巧"></a>搜索技巧</h2><p>对于搜索类问题，可能会使用到方向数组。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154136.png" alt="image-20220222203754096"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154136.png" alt="image-20220222203754096"></p>
 <p>可以通过设置数组来确定四个方向</p>
 <p><strong>x[-1,1,0,0];</strong></p>
 <p><strong>y[0,0,-1,1];</strong></p>
@@ -1685,7 +1685,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="图的遍历-797-所有可能的路径"><a href="#图的遍历-797-所有可能的路径" class="headerlink" title="图的遍历 797. 所有可能的路径"></a>图的遍历 <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/all-paths-from-source-to-target/">797. 所有可能的路径</a></h3><p>给你一个有 <code>n</code> 个节点的 <strong>有向无环图（DAG）</strong>，请你找出所有从节点 <code>0</code> 到节点 <code>n-1</code> 的路径并输出（<strong>不要求按特定顺序</strong>） <code>graph[i]</code> 是一个从节点 <code>i</code> 可以访问的所有节点的列表（即从节点 <code>i</code> 到节点 <code>graph[i][j]</code>存在一条有向边）。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154141.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154141.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：graph = [[1,2],[3],[3],[]]
 输出：[[0,1,3],[0,2,3]]
@@ -1726,7 +1726,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
 <li>设置好递归函数的出口（Base Case）</li>
 <li>编写「最小单元」处理逻辑</li>
 </ol>
-<h2 id="岛屿类问题（DFS）"><a href="#岛屿类问题（DFS）" class="headerlink" title="岛屿类问题（DFS）"></a>岛屿类问题（DFS）</h2><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154145.jpg" alt="img" style="zoom:50%;">
+<h2 id="岛屿类问题（DFS）"><a href="#岛屿类问题（DFS）" class="headerlink" title="岛屿类问题（DFS）"></a>岛屿类问题（DFS）</h2><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154145.jpg" alt="img" style="zoom:50%;">
 
 <p>一般采用DFS来解决。而深度优先搜索的写法和回溯法极为相似。</p>
 <p>模板</p>
@@ -1839,7 +1839,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <p>思路就是把靠边的岛屿剔除掉。<strong>在DFS遍历中使用一个flag判断是不是边界。然后再开始的两个for循环中调用完dfs之后如果不是封闭岛屿就顺势  加一。</strong></p>
 <h3 id="1020-飞地的数量"><a href="#1020-飞地的数量" class="headerlink" title="1020. 飞地的数量"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-enclaves/">1020. 飞地的数量</a></h3><p>一次 <strong>移动</strong> 是指从一个陆地单元格走到另一个相邻（<strong>上、下、左、右</strong>）的陆地单元格或跨过 <code>grid</code> 的边界。</p>
 <p>返回网格中 <strong>无法</strong> 在任意次数的移动中离开网格边界的陆地单元格的数量。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154151.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154151.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
 输出：3
@@ -1848,7 +1848,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <p>思路：本题和上一题可以说一摸一样。同样的做法。不同的是这里<strong>不是计算封闭岛屿的个数而是计算所有封闭岛屿的面积</strong>。</p>
 <h3 id="130-被围绕的区域"><a href="#130-被围绕的区域" class="headerlink" title="130. 被围绕的区域"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/surrounded-regions/">130. 被围绕的区域</a></h3><p>给你一个 <code>m x n</code> 的矩阵 <code>board</code> ，由若干字符 <code>'X'</code> 和 <code>'O'</code> ，找到所有被 <code>'X'</code> 围绕的区域，并将这些区域里所有的 <code>'O'</code> 用 <code>'X'</code> 填充。</p>
 <p>本题和上一题一样，不同的是需要<strong>将封闭岛屿全部填充。</strong></p>
-<h3 id="695-岛屿的最大面积"><a href="#695-岛屿的最大面积" class="headerlink" title="695. 岛屿的最大面积"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/max-area-of-island/">695. 岛屿的最大面积</a></h3><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154226.jpg" alt="img" style="zoom:50%;">
+<h3 id="695-岛屿的最大面积"><a href="#695-岛屿的最大面积" class="headerlink" title="695. 岛屿的最大面积"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/max-area-of-island/">695. 岛屿的最大面积</a></h3><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154226.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]
 输出：6
@@ -1921,7 +1921,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 
 
-<h3 id="463-岛屿的周长"><a href="#463-岛屿的周长" class="headerlink" title="463. 岛屿的周长"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/island-perimeter/">463. 岛屿的周长</a></h3><p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154236.png" alt="img"></p>
+<h3 id="463-岛屿的周长"><a href="#463-岛屿的周长" class="headerlink" title="463. 岛屿的周长"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/island-perimeter/">463. 岛屿的周长</a></h3><p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154236.png" alt="img"></p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 输出：16
 解释：它的周长是上面图片中的 16 个黄色的边<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -1952,19 +1952,19 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
 
 <h3 id="1905-统计子岛屿"><a href="#1905-统计子岛屿" class="headerlink" title="1905. 统计子岛屿"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/count-sub-islands/">1905. 统计子岛屿</a></h3><p>如果 <code>grid2</code> 的一个岛屿，被 <code>grid1</code> 的一个岛屿 <strong>完全</strong> 包含，也就是说 <code>grid2</code> 中该岛屿的每一个格子都被 <code>grid1</code> 中同一个岛屿完全包含，那么我们称 <code>grid2</code> 中的这个岛屿为 <strong>子岛屿</strong> 。请你返回 <code>grid2</code> 中 <strong>子岛屿</strong> 的 <strong>数目</strong> 。</p>
-<p><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154240.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154240.png" alt="img"></p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]
 输出：3
 解释：如上图所示，左边为 grid1 ，右边为 grid2 。
 grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>思路：先遍历一下这个矩阵，如果<code>grid2[i][j] == 1 &amp;&amp; grid1[i][j] != 1</code> 就将<code>grid2[i][j] == 0</code>这样操作之后就将grid2剩下的陆地就都是<code>grid1</code>的子岛屿了。最后再计算岛屿的数目就可以了。</p>
-<h3 id="不同的岛屿数量"><a href="#不同的岛屿数量" class="headerlink" title="不同的岛屿数量"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-distinct-islands/">不同的岛屿数量</a></h3><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154243.jpg" alt="img" style="zoom:50%;">
+<h3 id="不同的岛屿数量"><a href="#不同的岛屿数量" class="headerlink" title="不同的岛屿数量"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-distinct-islands/">不同的岛屿数量</a></h3><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154243.jpg" alt="img" style="zoom:50%;">
 
 <p>其中有四个岛屿，但是左下角和右上角的岛屿形状相同，所以不同的岛屿共有三个，算法返回 3。</p>
 <p><strong>思路</strong>：得想办法把二维矩阵中的「岛屿」进行转化，变成比如字符串这样的类型，然后利用 HashSet 这样的数据结构去重，最终得到不同的岛屿的个数。</p>
 <p>遍历顺序从某种意义上说就可以用来描述岛屿的形状，比如下图这两个岛屿：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154246.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154246.png" alt="img" style="zoom:50%;">
 
 <p>假设它们的遍历顺序是：</p>
 <blockquote>
@@ -2024,7 +2024,7 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 
 <h3 id="1926-迷宫中离入口最近的出口"><a href="#1926-迷宫中离入口最近的出口" class="headerlink" title="1926. 迷宫中离入口最近的出口"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/nearest-exit-from-entrance-in-maze/">1926. 迷宫中离入口最近的出口</a></h3><p>给你一个 <code>m x n</code> 的迷宫矩阵 <code>maze</code> （<strong>下标从 0 开始</strong>），矩阵中有空格子（用 <code>'.'</code> 表示）和墙（用 <code>'+'</code> 表示）。同时给你迷宫的入口 <code>entrance</code> ，用 <code>entrance = [entrancerow, entrancecol]</code> 表示你一开始所在格子的行和列。每一步操作，你可以往 <strong>上</strong>，<strong>下</strong>，<strong>左</strong> 或者 <strong>右</strong> 移动一个格子。你不能进入墙所在的格子，你也不能离开迷宫。你的目标是找到离 <code>entrance</code> <strong>最近</strong> 的出口。<strong>出口</strong> 的含义是 <code>maze</code> <strong>边界</strong> 上的 <strong>空格子</strong>。<code>entrance</code> 格子 <strong>不算</strong> 出口。</p>
 <p>请你返回从 <code>entrance</code> 到最近出口的最短路径的 <strong>步数</strong> ，如果不存在这样的路径，请你返回 <code>-1</code> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154251.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154251.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：maze = [["+","+",".","+"],[".",".",".","+"],["+","+","+","."]], entrance = [1,2]
 输出：1
@@ -2143,9 +2143,9 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 
 <p>继续优化：<strong>传统的 BFS 框架就是从起点开始向四周扩散，遇到终点时停止；而双向 BFS 则是从起点和终点同时开始扩散，当两边有交集的时候停止</strong>。</p>
 <p>分析算法复杂度的话，它俩的最坏复杂度都是 <code>O(N)</code>，但是实际上双向 BFS 确实会快一些。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154257.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154257.jpeg" alt="img" style="zoom:50%;">
 
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154300.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154300.jpeg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
@@ -2212,7 +2212,7 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 <p>3、传递性：如果节点 <code>p</code> 和 <code>q</code> 连通，<code>q</code> 和 <code>r</code> 连通，那么 <code>p</code> 和 <code>r</code> 也连通。</p>
 <p>0～9 任意两个<strong>不同</strong>的点都不连通，调用 <code>same</code> 都会返回 false，连通分量为 10 个。如果现在调用 <code>join(0, 1)</code>，那么 0 和 1 被连通，连通分量降为 9 个。再调用 <code>join(1, 2)</code>，这时 0,1,2 都被连通，调用 <code>same(0, 2)</code> 也会返回 true，连通分量变为 8 个。</p>
 <p>怎么表示连通性？设定树的<strong>每个节点有一个指针指向其父节点</strong>，如果是<strong>根节点的话，这个指针指向自己。</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154308.png" alt="image-20220708132456398" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154308.png" alt="image-20220708132456398" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">1005</span><span class="token punctuation">;</span> <span class="token comment">// 节点数量3 到 1000</span>
 <span class="token keyword">int</span> father<span class="token punctuation">[</span><span class="token number">1005</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 节点 x 的父节点是 parent[x]</span>
@@ -2226,7 +2226,7 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>如果某两个节点被连通，则让其中的（任意）一个节点的根节点接到另一个节点的根节点上</strong>：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154313.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154313.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 返回某个节点 x 的根节点</span>
 <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -2243,7 +2243,7 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>如果节点 <code>p</code> 和 <code>q</code> 连通的话，它们一定拥有相同的根节点</strong>：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154317.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154317.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">// 判断 p 和 q是否找到同一个根</span>
 <span class="token keyword">bool</span> <span class="token function">same</span><span class="token punctuation">(</span><span class="token keyword">int</span> p<span class="token punctuation">,</span> <span class="token keyword">int</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -2306,7 +2306,7 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 <h3 id="684-冗余连接"><a href="#684-冗余连接" class="headerlink" title="684. 冗余连接"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/redundant-connection/">684. 冗余连接</a></h3><p>树可以看成是一个连通且 <strong>无环</strong> 的 <strong>无向</strong> 图。</p>
 <p>给定往一棵 <code>n</code> 个节点 (节点值 <code>1～n</code>) 的树中添加一条边后的图。添加的边的两个顶点包含在 <code>1</code> 到 <code>n</code> 中间，且这条附加的边不属于树中已存在的边。图的信息记录于长度为 <code>n</code> 的二维数组 <code>edges</code> ，<code>edges[i] = [ai, bi]</code> 表示图中在 <code>ai</code> 和 <code>bi</code> 之间存在一条边。</p>
 <p>请找出一条可以删去的边，删除后可使得剩余部分是一个有着 <code>n</code> 个节点的树。如果有多个答案，则返回数组 <code>edges</code> 中最后出现的边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154322.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154322.png" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入: edges = [[1,2], [2,3], [3,4], [1,4], [1,5]]
 输出: [1,4]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2457,15 +2457,15 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 
 <p>本题是上一题的进阶版。在变量和变量之间有了倍数关系。由于 变量之间的倍数关系具有传递性，处理有传递性关系的问题，可以使用「并查集」，我们需要在并查集的「<strong>合并</strong>」与「<strong>查询</strong>」操作中 <strong>维护这些变量之间的倍数关系。</strong></p>
 <p><strong>构建有向图</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154329.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154329.png" alt="img" style="zoom:50%;">
 
 <p><strong>如何在「查询」操作的「路径压缩」优化中维护权值变化</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154333.png" alt="image.png" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154333.png" alt="image.png" style="zoom:50%;">
 
 <p><strong>如何在「合并」操作中维护权值的变化</strong></p>
 <p>「合并」操作基于这样一个 <strong>很重要的前提</strong>：我们将要合并的两棵树的高度最多为 2，换句话说两棵树都必需是「路径压缩」以后的效果，两棵树的叶子结点到根结点最多只需要经过一条有向边。例如已知$ \cfrac{a}{b} = 3.0$ ，$\cfrac{d}{c} = 4.0 $，又已知 $\cfrac{a}{d} = 6.0 $ ，现在合并结点 <code>a </code>和 <code>d </code>所在的集合，其实就是把 <code>a </code>的根结点 <code>b </code>指向 <code>d </code>的根结 <code>c</code>，那么如何计算 <code>b </code>指向 <code>c</code> 的这条有向边的权重呢？</p>
 <p>根据 <code>a</code> 经过 <code>b</code> 可以到达 <code>c</code>，<code>a</code> 经过 <code>d </code>也可以到达 <code>c</code>，因此 两条路径上的有向边的权值的乘积是一定相等的。设 <code>b </code>到 <code>c </code>的权值为 $x$，那么 $3.0 \cdot x = 6.0 \cdot 4.0 $，得 $x = 8.0$。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154337.png" alt="image.png" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154337.png" alt="image.png" style="zoom:50%;">
 
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">private</span><span class="token operator">:</span>
@@ -2554,11 +2554,11 @@ grid2 中标红的 1 区域是子岛屿，总共有 3 个子岛屿。<span aria-
 
 
 <h2 id="二分图判断"><a href="#二分图判断" class="headerlink" title="二分图判断"></a>二分图判断</h2><p>二分图的定义：<strong>二分图的顶点集可分割为两个互不相交的子集，图中每条边依附的两个顶点都分属于这两个子集，且两个子集内的顶点不相邻。</strong></p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154344.png" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154344.png" alt="img" style="zoom:50%;">
 
 <p>直观上来讲，<strong>给你一幅「图」，请你用两种颜色将图中的所有顶点着色，且使得任意一条边的两个端点的颜色都不相同，你能做到吗</strong>？</p>
 <p>这就是图的「双色问题」，其实这个问题就等同于二分图的判定问题，如果你能够成功地将图染色，那么这幅图就是一幅二分图，反之则不是：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154346.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154346.jpg" alt="img" style="zoom:50%;">
 
 <p>二分图判定思路：<strong>说白了就是遍历一遍图，一边遍历一边染色，看看能不能用两种颜色给所有节点染色，且相邻节点的颜色都不相同</strong>。</p>
 <p>既然说到遍历图，也不涉及最短路径之类的，当然是 DFS 算法和 BFS 皆可了，DFS 算法相对更常用些。</p>
@@ -2615,7 +2615,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">bool</
 <li>这个图可能不是连通图，也就是说两个节点 <code>u</code> 和 <code>v</code> 之间可能不存在一条连通彼此的路径。</li>
 </ul>
 <p><strong>二分图</strong> 定义：如果能将一个图的节点集合分割成两个独立的子集 <code>A</code> 和 <code>B</code> ，并使图中的每一条边的两个节点一个来自 <code>A</code> 集合，一个来自 <code>B</code> 集合，就将这个图称为 <strong>二分图</strong> 。如果图是二分图，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154352.jpg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154352.jpg" alt="img" style="zoom:50%;">
 
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">输入：graph = [[1,2,3],[0,2],[0,1,3],[0,2]]
 输出：false
@@ -2672,7 +2672,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">bool</
 
 <p>什么时候无法修完所有课程？当存在循环依赖的时候。</p>
 <p><strong>看到依赖问题，首先想到的就是把问题转化成「有向图」这种数据结构，只要图中存在环，那就说明存在循环依赖</strong>。具体来说，我们首先可以把课程看成「有向图」中的节点，节点编号分别是 <code>0, 1, ..., numCourses-1</code>，把课程之间的依赖关系看做节点之间的有向边。</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154356.jpeg" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154356.jpeg" alt="img" style="zoom:50%;">
 
 <p><strong>如果发现这幅有向图中存在环，那就说明课程之间存在循环依赖，肯定没办法全部上完；反之，如果没有环，那么肯定能上完全部课程</strong>。</p>
 <p>想解决这个问题，首先我们要把题目的输入转化成一幅有向图，然后再判断图中是否存在环。转换图的方式有两种：<strong>邻接表和邻接矩阵。</strong>常见的存储方式是使用邻接表 <code>vector&lt;vector&lt;int&gt;&gt; graph;</code> 其中**<code>graph[s]</code> 是一个数组，存储着节点 <code>s</code> 所指向的节点**。</p>
@@ -2722,7 +2722,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">bool</
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>注意：</strong> <code>used</code> 数组和 <code>onPath</code> 数组的区别，因为二叉树算是特殊的图，所以用遍历二叉树的过程来理解下这两个数组的区别：</p>
-<img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154400.gif" alt="img" style="zoom:50%;">
+<img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154400.gif" alt="img" style="zoom:50%;">
 
 <p><strong>上述 GIF 描述了递归遍历二叉树的过程，在 <code>used</code> 中被标记为 true 的节点用灰色表示，在 <code>onPath</code> 中被标记为 true 的节点用绿色表示</strong>。</p>
 <p><strong>PS：</strong>类比贪吃蛇游戏，<code>used</code> 记录蛇经过过的格子，而 <code>onPath</code> 仅仅记录蛇身。<code>onPath</code> 用于判断是否成环，类比当贪吃蛇自己咬到自己（成环）的场景。</p>
@@ -2778,7 +2778,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">bool</
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>思考：对于 BFS 的环检测算法，如果问你形成环的节点具体是哪些，你应该如何实现呢？</p>
-<h2 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h2><img src="https://raw.githubusercontent.com/luoshunchong/myphotos/main/img/20230514154405.jpg" alt="img" style="zoom:50%;">
+<h2 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h2><img src="https://cdn.jsdelivr.net/gh/luoshunchong/myphotos/img/20230514154405.jpg" alt="img" style="zoom:50%;">
 
 <p><strong>直观地说就是，让你把一幅图「拉平」，而且这个「拉平」的图里面，所有箭头方向都是一致的</strong>，比如上图所有箭头都是朝右的。如果一幅有向图中存在环，是无法进行拓扑排序的，因为肯定做不到所有箭头方向一致；反过来，如果一幅图是「有向无环图」，那么一定可以进行拓扑排序。</p>
 <h3 id="210-课程表-II"><a href="#210-课程表-II" class="headerlink" title="210. 课程表 II"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/course-schedule-ii/">210. 课程表 II</a></h3><p>现在你总共有 <code>numCourses</code> 门课需要选，记为 <code>0</code> 到 <code>numCourses - 1</code>。给你一个数组 <code>prerequisites</code> ，其中 <code>prerequisites[i] = [ai, bi]</code> ，表示在选修课程 <code>ai</code> 前 <strong>必须</strong> 先选修 <code>bi</code> 。</p>
@@ -3497,7 +3497,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">bool</
                 <span id="year">2019-2023</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">ShunchongLuo</a>
+            <a href="/about" target="_blank">Mr Luo</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
